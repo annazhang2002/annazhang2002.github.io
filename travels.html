@@ -2,6 +2,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="style.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
         <ul class="nav">
@@ -10,11 +11,68 @@
             <li class="nav"><a href="aboutme.html">About Me</a></li>
             <li class="nav"><a href="experience.html">My Experience</a></li>
             <li class="nav"><a href="portfolio.html">Portfolio</a></li>
-            <li class="nav"><a class="active" href="travels.html">My Travels</a></li>
+            <li class="nav"><a class="activeNav" href="travels.html">My Travels</a></li>
         </ul>
         <div id="grad1">
             <h1>My Travels</h1>
-        </div>   
+        </div> 
+        <div class="slideshow-container">
+            <h2>Costa Rica Summer Abroad 2017</h2>
+            <div class="mySlides fade">
+                  <img class="image" src="https://i.pinimg.com/originals/c9/c1/1a/c9c11ac93d29bed446ea061067836669.jpg">
+                <div class="text">My trip was filled with hikes to clear and fresh water waterfalls such as the one shown above.</div>
+            </div>
+
+            <div class="mySlides fade">
+                     <img class="image" src="https://i.pinimg.com/originals/7a/24/43/7a2443d8a9335749a69240e565c3f547.jpg">
+                 <div class="text">In Monteverde, we walked over the forests on the hanging bridges.</div>
+            </div>
+
+            <div class="mySlides fade">
+                  <img class="image" src="https://i.pinimg.com/originals/52/14/8c/52148c2463165acb23f5fc64990853fa.jpg">
+            <div class="text">Near the volcano Miravalles, there are many hot springs that are naturally heated. </div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+</div>
+    <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
     </body>
     <footer>
         <p>Programmed by Anna Zhang</p>

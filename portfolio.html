@@ -9,12 +9,56 @@
             <li class="nav"><a href="index.html">Home</a></li>
             <li class="nav"><a href="aboutme.html">About Me</a></li>
             <li class="nav"><a href="experience.html">My Experience</a></li>
-            <li class="nav"><a class="active" href="portfolio.html">Portfolio</a></li>
+            <li class="nav"><a class="activeNav" href="portfolio.html">Portfolio</a></li>
             <li class="nav"><a href="travels.html">My Travels</a> </li>
         </ul>
         <div id="grad1">
             <h1>My Portfolio</h1>
         </div>   
+        <button class="accordion">Section 1</button>
+            <div class="panel">
+               <p>Lorem ipsum...</p>
+            </div>
+
+        <button class="accordion">Section 2</button>
+            <div class="panel">
+               <p>Lorem ipsum...</p>
+            </div>
+
+        <button class="accordion">HELLOOOO</button>
+        <div class="panel">
+          <p>Lorem ipsum...</p>
+        </div>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].onclick = function(){
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            }
+        }
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+             acc[i].onclick = function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight){
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                } 
+            }
+        }
+    </script>
     </body>
     <footer>
         <p>Programmed by Anna Zhang</p>
