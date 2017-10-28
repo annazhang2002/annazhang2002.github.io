@@ -96,10 +96,9 @@ li.nav a:hover {
 }
 
 footer {
-    text-align: left;
-    font-size: 10px;
-    position : fixed;
+    float: bottom;
     bottom : 15px;
+    margin: 5px;
 }
 
 body {font-family: Verdana,sans-serif;margin:0}
@@ -290,4 +289,39 @@ body, html {
     font-size: 60px;
     color:  black;
     font-family: "Monospace", "Courier New";
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  font-size: 30px;
+  color: white;
+}
+
+.fa-instagram {
+  background: linear-gradient( to bottom right, #990099, #e600ac, #ffb31a,#ffcc00);
+  color: white;
+}
+
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.credits {
+    text-align: left;
+    font-size: 10px;
 }
