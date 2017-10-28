@@ -275,11 +275,8 @@ body, html {
 /* The hero image */
 .hero-image {
     background-image: url("https://i.pinimg.com/originals/57/54/33/57543301fed11ddf185973784987b0b4.jpg");
-    /* Set a specific height */
     height: 75%;
     font-size: 20px;
-
-    /* Position and center the image to scale nicely on all screens */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
