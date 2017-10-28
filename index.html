@@ -5,7 +5,7 @@
         <title>Anna Zhang Home Page</title>
     </head>
     <body>
-        <ul class="nav">
+       <div class="firstnav" id="firstnav"> <ul class="nav">
             <li class="anna">ANNA ZHANG</li>
             <li class="nav"><a class="activeNav" href="index.html">Home</a></li>
             <li class="nav"><a href="aboutme.html">About Me</a></li>
@@ -13,12 +13,82 @@
             <li class="nav"><a href="portfolio.html">Portfolio</a></li>
             <li class="nav"><a href="travels.html">My Travels</a> </li>
         </ul>
-        <div id="grad1">
-            <h1>Anna Zhang</h1>
-        </div>        
-        <p class="space"></p>
-        <img class="me" src="https://i.pinimg.com/originals/e8/2a/49/e82a4992671ed916d6233ab23a986885.jpg">
-        <p><br />This is a website with some information about who I am and what I am like!</p>
+        </div>
+        <div class="imgofme" id="imgofme">
+            
+            
+            <img src=""></img>
+            
+            
+        </div>
+        <div class="hero-image">
+          <div class="hero-text">
+            <h1 class="name">Anna Zhang</h1>
+            <p>And I'm an aspiring software engineer. Check out my portfolio by clicking the button below or look in the navigation bar!</p>
+            <div class="portfolio"><button class="portfolio"><a href="portfolio.html" class="portfolio">Go to My Portfolio</a></button></div>
+          </div>
+        </div>  
+        <p>I am an <strong>explorer</strong>, <i>innovator</i></p>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                      <img class="image" src="https://i.pinimg.com/originals/51/91/fb/5191fb99df14a4558a62cc383e3e9ead.jpg">
+                </div>
+    
+                <div class="mySlides fade">
+                         <img class="image" src="https://i.pinimg.com/originals/6c/25/69/6c2569fc8118e54eb616d4b36cfc6145.jpg">
+                </div>
+    
+                <div class="mySlides fade">
+                      <img class="image" src="https://i.pinimg.com/originals/1e/25/b6/1e25b65a2f162ad80b4f3a20c123536d.jpg">
+                </div>
+                <div class="mySlides fade">
+                    <img  class="image" src="https://i.pinimg.com/originals/26/3a/10/263a10266190af1ff4857076e74c3714.jpg">
+                </div>
+                <div class="mySlides fade">
+                    <img  class="image" src="https://i.pinimg.com/originals/af/4a/cb/af4acb33ce4a22bf16ac14b3b0bc5100.jpg">
+                </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+        </div>
+        <br>
+    
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+        <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+    </script>
     </body>
     <footer>
         <p>Programmed by Anna Zhang</p>
