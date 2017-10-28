@@ -7,6 +7,19 @@
     margin: 50px;
 }
 
+ul.interests {
+    list-style-type: none;
+    text-align-last: center;
+}
+
+li.interests {
+    float: none;
+    background-color: transparent;
+    color: black;
+    text-align: center;
+    font-family: "serif", "Times New Roman";
+}
+
 body {
     text-align: center;
     font-family : "Arial";
@@ -23,6 +36,10 @@ h1 {
     font-family: "Monospace", "Courier New";
 }
 
+h2 {
+    font-family: "monospace", "courier new";
+}
+
 #grad1 {
     margin-top: 55px;
     margin-left: 30%;
@@ -31,7 +48,7 @@ h1 {
     background: linear-gradient(#00ffff, #a64dff); 
 }
 
-ul {
+ul.nav {
     list-style-type: none;
     margin-top: 0px;
     padding: 0px;
@@ -42,15 +59,27 @@ ul {
     background-color: gray;
 }
 
-li {
+.anna {
+    font-family: cursive;
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 20px;
+    float: left;
+    background-color: gray;
+    color: white;
+}
+li.nav {
     display: block;
     float: left;
     background-color: gray;
-    outline-color: white;
+    color: white;
     font-family: "serif", "georgia";
 }
 
-li a {
+li.nav a {
     display: block;
     color: white;
     text-align: center;
@@ -58,6 +87,16 @@ li a {
     text-decoration: none;
 }
 
+li.nav a:hover {
+    background-color: #a6a6a6;
+}
+
 .active {
     background-color: #80dfff;
+    padding-bottom: 2px;
+}
+
+footer {
+    text-align: left;
+    font-size: 10px;
 }
