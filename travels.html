@@ -21,8 +21,15 @@
           </div>
         </div>  
         <div class="slideshow-container">
-            <h2>Costa Rica Summer Abroad 2017</h2>
+            <h2>Costa Rica Summer Study Abroad 2017 : Biodiversity and Conservation</h2>
             <div class="container">
+                <div class="mySlides fade">
+                      <img class="image" src="https://i.pinimg.com/originals/cd/fa/3a/cdfa3af5753ce96d3292c28f688c4174.jpg">
+                    <div class="overlay">
+                        <div class="text">In Corcovado National Park, we hiked to a waterfall and just swam in the warm flowing water.</div>
+                    </div>
+                </div>
+                
                 <div class="mySlides fade">
                       <img class="image" src="https://i.pinimg.com/originals/c9/c1/1a/c9c11ac93d29bed446ea061067836669.jpg">
                     <div class="overlay">
@@ -51,10 +58,56 @@
       <span class="dot" onclick="currentSlide(2)"></span> 
       <span class="dot" onclick="currentSlide(3)"></span> 
     </div>
+    
+    <div class="slideshow-container1">
+            <h2>Stanford Pre-Collegiate Summer Institutes : Computer Simulations and Interactive Media</h2>
+            <div class="container1">
+                <div class="mySlides1 fade">
+                      <img class="image1" src="https://i.pinimg.com/originals/29/06/0c/29060c1aa21e214c72e71834925a118f.jpg">
+                    <div class="overlay1">
+                        <div class="text1">At Stanford, we stayed in the Kappa Alpha building and would often eat lunch or food around this tree.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="mySlides1 fade">
+                     <img class="image1" src="https://i.pinimg.com/originals/76/89/02/76890221808e3f1d4a44cb1580c1bed3.jpg">
+                 <div class="text1">On the second weekend, we went on a field trip to San Francisco. In this image, we are in the sculpture garden in the SFMOMA.</div>
+            </div>
+
+            <div class="mySlides1 fade">
+                  <img class="image1" src="https://i.pinimg.com/originals/1d/19/b8/1d19b871267c9461932d1f711dda3a53.jpg">
+                  <div class="text1">In the MOMA, there was a large set of stairs that were clearly quite aesthtically appealing :)</div>
+            </div>
+            
+            <div class="mySlides1 fade">
+                  <img class="image1" src="https://i.pinimg.com/originals/98/ff/ec/98ffec9c2aba23b9b3d53bdfd2095189.jpg">
+                  <div class="text1">At Stanford, I made a lot of great friends including people from Seattle and Germany</div>
+            </div>
+            
+            <div class="mySlides1 fade">
+                  <img class="image1" src="https://i.pinimg.com/originals/c0/d8/3b/c0d83b7579c6e90fea2bb2bf3fcef253.jpg">
+                  <div class="text1">All of the lights!</div>
+            </div>
+
+        <a class="prev" onclick="plusSlides1(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides1(1)">&#10095;</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+      <span class="dot1" onclick="currentSlide1(1)"></span> 
+      <span class="dot1" onclick="currentSlide1(2)"></span> 
+      <span class="dot1" onclick="currentSlide1(3)"></span>
+      <span class="dot1" onclick="currentSlide1(4)"></span>
+    </div>
 </div>
     <script>
     var slideIndex = 1;
     showSlides(slideIndex);
+    
+    var slideIndex1 = 1;
+    showSlides1(slideIndex1);
     
     function plusSlides(n) {
       showSlides(slideIndex += n);
@@ -78,6 +131,30 @@
       }
       slides[slideIndex-1].style.display = "block";  
       dots[slideIndex-1].className += " active";
+    }
+    
+    function plusSlides1(n) {
+      showSlides1(slideIndex1 += n);
+    }
+    
+    function currentSlide1(n) {
+      showSlides1(slideIndex1 = n);
+    }
+    
+    function showSlides1(n) {
+      var i1;
+      var slides1 = document.getElementsByClassName("mySlides1");
+      var dots1 = document.getElementsByClassName("dot1");
+      if (n > slides1.length) {slideIndex1 = 1}    
+      if (n < 1) {slideIndex1 = slides1.length}
+      for (i = 0; i < slides1.length; i++) {
+          slides1[i].style.display = "none";  
+      }
+      for (i = 0; i < dots1.length; i++) {
+          dots1[i].className = dots1[i].className.replace(" active", "");
+      }
+      slides1[slideIndex1-1].style.display = "block";  
+      dots1[slideIndex1-1].className += " active";
     }
     </script>
     </body>
