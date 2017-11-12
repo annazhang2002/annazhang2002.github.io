@@ -362,3 +362,7 @@ body, html {
     text-align: left;
     font-size: 10px;
 }
+
+.larger {
+    font-size: 30px;
+}
