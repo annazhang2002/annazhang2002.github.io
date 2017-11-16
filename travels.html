@@ -105,7 +105,7 @@
     <div class="slideshow-container">
             <h2>Washington D.C. Inauguration Trip 2017</h2>
             <div class="container">
-                <div class="mySlides fade">
+                <div class="mySlides2 fade">
                       <img class="image" src="https://i.pinimg.com/originals/10/90/67/10906720bda3ca12a9a2d490485bea89.jpg">
                     <div class="overlay">
                         <div class="text">jj</div>
@@ -113,24 +113,11 @@
                 </div>
                 
                 <div class="mySlides2 fade">
-                      <img class="image2" src="https://i.pinimg.com/originals/c3/16/21/c316213ec155a56fe5781b2c3c7e0bb9.jpg">
+                      <img class="image" src="https://i.pinimg.com/originals/c3/16/21/c316213ec155a56fe5781b2c3c7e0bb9.jpg">
                     <div class="overlay2">
                         <div class="text2">jj</div>
                     </div>
                 </div>
-            <div class="mySlides2 fade">
-                     <img class="image2" src="https://i.pinimg.com/originals/e1/79/cb/e179cb044258595c6b6b4ed52bc8d8d5.jpg">
-                 <div class="overlay2">
-                        <div class="text2">jj</div>
-                    </div>
-            </div>
-
-            <div class="mySlides2 fade">
-                  <img class="image2" src="https://i.pinimg.com/originals/18/62/60/1862603277456addab11562764354455.jpg">
-                  <div class="overlay2">
-                        <div class="text2">jj</div>
-                    </div>
-            </div>
 
         <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides2(1)">&#10095;</a>
@@ -141,8 +128,6 @@
     <div style="text-align:center">
       <span class="dot" onclick="currentSlide2(1)"></span> 
       <span class="dot" onclick="currentSlide2(2)"></span> 
-      <span class="dot" onclick="currentSlide2(3)"></span> 
-      <span class="dot" onclick="currentSlide2(4)"></span>
     </div>
 </div>
     <script>
@@ -212,16 +197,16 @@
     }
     
     function showSlides2(n) {
-      var i;
+      var i2;
       var slides2 = document.getElementsByClassName("mySlides2");
       var dots2 = document.getElementsByClassName("dot2");
       if (n > slides.length) {slideIndex2 = 1}    
       if (n < 1) {slideIndex2 = slides2.length}
-      for (i = 0; i < slides2.length; i++) {
-          slides2[i].style.display = "none";  
+      for (i2 = 0; i2< slides2.length; i2++) {
+          slides2[i2].style.display = "none";  
       }
-      for (i = 0; i < dots2.length; i++) {
-          dots2[i].className = dots2[i].className.replace(" active", "");
+      for (i2 = 0; i2 < dots2.length; i2++) {
+          dots2[i2].className = dots2[i2].className.replace(" active", "");
       }
       slides2[slideIndex2-1].style.display = "block";  
       dots2[slideIndex2-1].className += " active";
