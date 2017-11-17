@@ -65,7 +65,7 @@
             <div class="container1">
                 <div class="mySlides1 fade">
                       <img class="image1" src="https://i.pinimg.com/originals/29/06/0c/29060c1aa21e214c72e71834925a118f.jpg">
-                    <div class="overlay1">
+                    <div class="overlay">
                         <div class="text1">At Stanford, we stayed in the Kappa Alpha building and would often eat lunch or food around this tree.</div>
                     </div>
                 </div>
@@ -101,22 +101,19 @@
       <span class="dot1" onclick="currentSlide1(2)"></span> 
       <span class="dot1" onclick="currentSlide1(3)"></span>
       <span class="dot1" onclick="currentSlide1(4)"></span>
+      <span class="dot1" onclick="currentSlide1(5)"></span>
     </div>
-    <div class="slideshow-container">
+    <div class="slideshow-container2">
             <h2>Washington D.C. Inauguration Trip 2017</h2>
-            <div class="container">
+            <div class="container2">
                 <div class="mySlides2 fade">
-                      <img class="image" src="https://i.pinimg.com/originals/10/90/67/10906720bda3ca12a9a2d490485bea89.jpg">
-                    <div class="overlay">
-                        <div class="text">jj</div>
-                    </div>
+                      <img class="image2" src="https://i.pinimg.com/originals/10/90/67/10906720bda3ca12a9a2d490485bea89.jpg">
+                        <div class="text1">jj</div>
                 </div>
                 
                 <div class="mySlides2 fade">
-                      <img class="image" src="https://i.pinimg.com/originals/c3/16/21/c316213ec155a56fe5781b2c3c7e0bb9.jpg">
-                    <div class="overlay2">
-                        <div class="text2">jj</div>
-                    </div>
+                      <img class="rotateimg180" src="https://i.pinimg.com/originals/c3/16/21/c316213ec155a56fe5781b2c3c7e0bb9.jpg">
+                    <div class="text1">jj</div>
                 </div>
 
         <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
@@ -126,8 +123,8 @@
     <br>
 
     <div style="text-align:center">
-      <span class="dot" onclick="currentSlide2(1)"></span> 
-      <span class="dot" onclick="currentSlide2(2)"></span> 
+      <span class="dot2" onclick="currentSlide2(1)"></span> 
+      <span class="dot2" onclick="currentSlide2(2)"></span> 
     </div>
 </div>
     <script>
@@ -200,13 +197,13 @@
       var i2;
       var slides2 = document.getElementsByClassName("mySlides2");
       var dots2 = document.getElementsByClassName("dot2");
-      if (n > slides.length) {slideIndex2 = 1}    
+      if (n > slides2.length) {slideIndex2 = 1}    
       if (n < 1) {slideIndex2 = slides2.length}
-      for (i2 = 0; i2< slides2.length; i2++) {
-          slides2[i2].style.display = "none";  
+      for (i = 0; i < slides2.length; i++) {
+          slides2[i].style.display = "none";  
       }
-      for (i2 = 0; i2 < dots2.length; i2++) {
-          dots2[i2].className = dots2[i2].className.replace(" active", "");
+      for (i = 0; i < dots2.length; i++) {
+          dots2[i].className = dots2[i].className.replace(" active", "");
       }
       slides2[slideIndex2-1].style.display = "block";  
       dots2[slideIndex2-1].className += " active";
