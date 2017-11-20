@@ -207,6 +207,7 @@ body {font-family: Verdana,sans-serif;margin:0}
   background-color:  #ccffcc;
   font-size: 15px;
   padding: 10px;
+  margin-bottom: 20px;
   position: absolute;
   bottom: 8px;
   width: 100%;
@@ -257,7 +258,7 @@ body {font-family: Verdana,sans-serif;margin:0}
   cursor: pointer;
   height: 15px;
   width: 15px;
-  margin: 0 2px;
+  margin: 10 2px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
@@ -309,7 +310,8 @@ body {font-family: Verdana,sans-serif;margin:0}
 .rotateimg180 {
   transform: rotate(180deg);
   margin-top: 5px;
-    width: 100%;
+  width: 100%;
+  
 }
 
 button.accordion {
