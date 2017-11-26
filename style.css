@@ -477,3 +477,15 @@ body, html {
 #rotate90 {
     transform: rotate(90deg);
 }
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #595959;
+    text-align: left;
+    padding: 8px;
+}
