@@ -481,11 +481,20 @@ body, html {
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
-    width: 100%;
+    width: 95%;
+    margin: auto;
 }
 
 td, th {
     border: 1px solid #595959;
     text-align: left;
     padding: 8px;
+}
+
+li.tablelist {
+    float: none;
+    background-color: transparent;
+    color: black;
+    text-align: left;
+    font-family: "serif", "Times New Roman";
 }
