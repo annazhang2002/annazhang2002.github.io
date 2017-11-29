@@ -69,7 +69,20 @@ ul.nav {
     float: left;
     background-color: gray;
     color: white;
+    text-decoration: none;
 }
+
+.anna {
+    text-decoration: none;
+    font-family: cursive;
+    font-size: 20px;
+    display: block;
+    float: left;
+    background-color: gray;
+    color: white;
+    font-family: cursive;
+}
+
 li.nav {
     display: block;
     float: left;
