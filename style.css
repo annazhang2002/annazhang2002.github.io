@@ -44,6 +44,7 @@ h2 {
     position: fixed;
     top: 0;
     z-index: 99999;
+    
 }
 
 ul.nav {
@@ -56,23 +57,10 @@ ul.nav {
     width: 100%;
     background-color: gray;
     z-index: 500;
+    padding: 9px, 12px;
 }
 
-.anna {
-    font-family: cursive;
-    display: block;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 5px;
-    padding-right: 5px;
-    font-size: 20px;
-    float: left;
-    background-color: gray;
-    color: white;
-    text-decoration: none;
-}
-
-.anna {
+li.anna {
     text-decoration: none;
     font-family: cursive;
     font-size: 20px;
@@ -80,7 +68,19 @@ ul.nav {
     float: left;
     background-color: gray;
     color: white;
-    font-family: cursive;
+    padding: 9px, 12px;
+}
+
+li.anna a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 9px, 12px;
+}
+
+li.anna a:hover {
+    background-color: #a6a6a6;
 }
 
 li.nav {
