@@ -83,6 +83,22 @@ li.anna a:hover {
     background-color: #a6a6a6;
 }
 
+li.home {
+    display: block;
+    float: left;
+    background-color: gray;
+    color: white;
+    font-family: "serif", "georgia";
+}
+
+li.home a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
 li.nav {
     display: block;
     float: left;
