@@ -394,6 +394,7 @@ button.accordion.active, button.accordion:hover {
 
 body, html {
     height: 100%;
+    margin:0px;
 }
 
 .hero-text {
@@ -526,4 +527,22 @@ li.tablelist {
     color: black;
     text-align: left;
     font-family: "serif", "Times New Roman";
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+* {
+    box-sizing: border-box;
 }
