@@ -532,7 +532,8 @@ li.tablelist {
 .column {
     float: left;
     padding: 10px;
-    border-style: groove;
+    border-style: ridge;
+    background-color:#dbdbdb;
     border-color:#595959;
 }
 
