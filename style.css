@@ -546,3 +546,9 @@ li.tablelist {
 * {
     box-sizing: border-box;
 }
+
+@media (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
