@@ -32,11 +32,7 @@ h2 {
     font-family: "monospace", "courier new";
 }
 
-#grad1 {
-    margin-top: 55px;
-    margin-left: 30%;
-    height: 40px;
-    width: 40%;
+#grad {
     background: linear-gradient(#00ffff, #a64dff); 
 }
 
