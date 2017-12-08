@@ -33,7 +33,7 @@ h2 {
 }
 
 #grad {
-    background: linear-gradient(#00ffff, #a64dff); 
+    background: radial-gradient(#d3fff4,#d3fff4,#d3fff4, #afafaf); 
 }
 
 .firstnav {
