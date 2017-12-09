@@ -40,6 +40,10 @@ h2 {
     background: radial-gradient(#d3fff4, #d3fff4,#afafaf); 
 }
 
+#grad2 {
+    background: radial-gradient(#d3fff4, white,white); 
+}
+
 .firstnav {
     position: fixed;
     top: 0;
