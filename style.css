@@ -41,7 +41,7 @@ h2 {
 }
 
 #grad2 {
-    background: linear-gradient(#d8d8d8, white, white, white, white, white,#d8d8d8); 
+    background: linear-gradient(#d3fff4, white, white, white, white,#d3fff4); 
 }
 
 #grad3 {
@@ -367,7 +367,7 @@ button.accordion {
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 button.accordion.active, button.accordion:hover {
-    background-color: #ccc;
+    background-color: #fbdbff;
 }
 
 /* Style the accordion panel. Note: hidden by default */
