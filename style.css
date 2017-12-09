@@ -358,7 +358,9 @@ button.accordion {
     padding: 18px;
     width:  90%;
     text-align: center;
-    border: none;
+    border: solid;
+    border-width: 1px;
+    border-color:#d8d8d8;
     outline: none;
     transition: 0.4s;
 }
