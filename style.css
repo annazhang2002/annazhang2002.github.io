@@ -151,7 +151,6 @@ body {font-family: Verdana,sans-serif;margin:0}
 
 .mySlides1 {display:none}
 
-/* Slideshow container */
 .slideshow-container1 {
   max-width: 650px;
   position: relative;
@@ -160,14 +159,12 @@ body {font-family: Verdana,sans-serif;margin:0}
 
 .mySlides2 {display:none}
 
-/* Slideshow container */
 .slideshow-container2 {
   max-width: 650px;
   position: relative;
   margin: auto;
 }
 
-/* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -185,13 +182,12 @@ body {font-family: Verdana,sans-serif;margin:0}
     left: 0;
     border-radius: 3px 0 0 3px;
 }
-/* Position the "next button" to the right */
+
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
@@ -208,7 +204,6 @@ body {font-family: Verdana,sans-serif;margin:0}
   text-align: center;
 }
 
-/* Number text (1/3 etc) */
 .numbertext {
   color: #f2f2f2;
   font-size: 12px;
