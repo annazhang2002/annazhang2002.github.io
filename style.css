@@ -361,7 +361,6 @@ button.accordion.active, button.accordion:hover {
     background-color: #fbdbff;
 }
 
-/* Style the accordion panel. Note: hidden by default */
 .panel {
     padding: 0 18px;
     background-color: white;
