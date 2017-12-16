@@ -356,7 +356,7 @@ button.accordion {
     transition: 0.4s;
 }
 
-/* Add a backgroundhe b is clicked on .acth JS),  move the mouse over it (hover) */
+/*  */
 button.accordion.active, button.accordion:hover {
     background-color: #fbdbff;
 }
