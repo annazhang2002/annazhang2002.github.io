@@ -21,7 +21,71 @@
           </div>
         </div> 
         <br>
+    <div class="row">
+      <div class="column" id="grad2" style="background-color:white;width:100%;">
+        <button class="accordion">1. Code</button>
+            <div class="panel">
+               <p></p>
+            </div>
+            
+        <button class="accordion">2. UML Diagram</button>
+            <div class="panel">
+               <p></p>
+            </div>
 
+        <button class="accordion">3. Program Output</button>
+            <div class="panel">
+               <p></p>
+            </div>
+            
+        <button class="accordion">4. Project Summary</button>
+            <div class="panel">
+               <p></p>
+            </div>
+            
+        <button class="accordion">5. Biography</button>
+            <div class="panel">
+               <p></p>
+            </div>
+            
+        <button class="accordion">6. LinkedIn Profile</button>
+            <div class="panel">
+               <p></p>
+            </div>
+            
+      </div>
+      
+    </div>  
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].onclick = function(){
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            }
+        }
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+             acc[i].onclick = function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight){
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                } 
+            }
+        }
+    </script>
     </body>
     <footer>
       <h3>Add me on Social Media too!</h3>
