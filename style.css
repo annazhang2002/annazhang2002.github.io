@@ -15,7 +15,7 @@ li.interests {
 body {
     text-align: center;
     font-family : "Arial";
-    background-color: #d3fff4;
+    background-color: #e5f2ff;
 }
 
 p {
@@ -33,19 +33,19 @@ h2 {
 }
 
 #grad {
-    background: radial-gradient(#d3fff4,#d3fff4,#d3fff4, #afafaf); 
+    background: radial-gradient(#e5f2ff,#e5f2ff,#e5f2ff, #e6e6e6); 
 }
 
 #grad1 {
-    background: radial-gradient(#d3fff4, #d3fff4,#afafaf); 
+    background: radial-gradient(#e5f2ff, #e5f2ff,#e6e6e6); 
 }
 
 #grad2 {
-    background: linear-gradient(#d3fff4, white, white, white, white,#d3fff4); 
+    background: linear-gradient(#e5f2ff, white, white, white, white,#e5f2ff); 
 }
 
 #grad3 {
-    background: radial-gradient(white, white, #d3fff4);
+    background: radial-gradient(white, white, #e5f2ff);
 }
 
 .firstnav {
@@ -197,7 +197,7 @@ body {font-family: Verdana,sans-serif;margin:0}
 .text {
   color: black;
   font-weight: bold;
-  background-color:  #d3fff4;
+  background-color:  #e5f2ff;
   font-size: 15px;
   padding: 10px;
   position: absolute;
@@ -217,7 +217,7 @@ body {font-family: Verdana,sans-serif;margin:0}
 .text1 {
   color: black;
   font-weight: bold;
-  background-color:  #d3fff4;
+  background-color:  #e5f2ff;
   font-size: 15px;
   padding: 10px;
   position: absolute;
@@ -237,7 +237,7 @@ body {font-family: Verdana,sans-serif;margin:0}
 .text2 {
   color: black;
   font-weight: bold;
-  background-color:  #d3fff4;
+  background-color:  #e5f2ff;
   font-size: 15px;
   padding: 10px;
   margin-bottom: 20px;
