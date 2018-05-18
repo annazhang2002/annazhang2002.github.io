@@ -135,15 +135,14 @@ li.nav a:hover {
 footer {
     background-color: gray;
     float: bottom;
-    bottom: 0s;
-    margin: 5px;
+    margin: 0px;
 }
 
 body {font-family: Verdana,sans-serif;margin:0}
 .mySlides {display:none}
 
 .slideshow-container {
-  max-width: 650px;
+  max-width: 100%;
   position: relative;
   margin: auto;
   
@@ -366,6 +365,8 @@ button.accordion.active, button.accordion:hover {
 
 .panel {
     padding: 0 18px;
+    margin-left:5%;
+    margin-right:5%;
     background-color: white;
     max-height: 0;
     overflow: hidden;
@@ -377,15 +378,13 @@ button.accordion.active, button.accordion:hover {
     border-color: transparent;
     background-color: transparent;
     color: white;
-    margin: 0px;
-    padding: 20px;
-    margin-top: 10px;
+    margin: 10px;
     text-decoration: none;
 }
 
 .portfolio a {
     background-color: #737373;
-    margin: 0;
+    padding: 20px;
 }
 
 .portfolio a:hover{
@@ -463,7 +462,7 @@ body, html {
 
 .fa {
     padding: 20px;
-    font-size: 30px;
+    font-size: 20px;
     width: 60px;
     text-align: center;
     text-decoration: none;
@@ -561,6 +560,15 @@ li.tablelist {
     clear: both;
 }
 
+.columnClear {
+    float: left;
+    margin: 5%;
+    margin-top:0px;
+    background-color:transparent;
+    border:none;
+    width:60%;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -572,4 +580,18 @@ li.tablelist {
     .column1 {
         width: 100%;
     }
+    .columnClear {
+        width:100%;
+    }
+}
+
+.interestTitle {
+    font-size:50px;
+    color: black;
+    margin-bottom: 0px;
+    text-decoration: underline;
+}
+
+.gray {
+    color: #262626;
 }
