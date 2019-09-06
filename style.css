@@ -502,7 +502,14 @@ body, html {
 
 .credits {
     text-align: left;
-    font-size: 10px;
+    font-size: 15px;
+}
+
+.dottech {
+  height:40px;
+  float:right;
+  padding-right:40px;
+  padding-top:8px;
 }
 
 .larger {
