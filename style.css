@@ -356,6 +356,8 @@ button.accordion {
     border-color:#7a7a7a;
     outline: none;
     transition: 0.4s;
+    font-size: 20px;
+    font-family: "Times New Roman", Times, serif;
 }
 
 /*  */
@@ -380,6 +382,8 @@ button.accordion.active, button.accordion:hover {
     color: white;
     margin: 10px;
     text-decoration: none;
+    font-family: "Times New Roman", Times, serif;
+    font-size:17px;
 }
 
 .portfolio a {
@@ -399,21 +403,45 @@ body, html {
     margin:0px;
 }
 
+
 .hero-text {
     opacity: 1;
     text-align: center;
     position: absolute;
-    top: 50%;
-    left:30%;
-    right: 30%;
+    top: 45%;
+    left:20%;
+    right: 70%;
     transform: translate(-50%, -50%);
-    color: black;
+    color: white;
+    font-size: 25px;
+}
+.hero-text-zhang {
+    opacity: 1;
+    text-align: center;
+    position: absolute;
+    top: 60%;
+    left:19%;
+    right: 70%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 25px;
+}
+
+.hero-text-right {
+    opacity: 1;
+    text-align: center;
+    position: absolute;
+    top: 55%;
+    left:75%;
+    transform: translate(-50%, -50%);
+    color: white;
     font-size: 15px;
 }
 
+
 .hero-image {
-    background-image: url("https://i.pinimg.com/originals/57/54/33/57543301fed11ddf185973784987b0b4.jpg");
-    height: 75%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("images/heroimage.jpg");
+    height: 80%;
     font-size: 20px;
     background-position: center;
     background-repeat: no-repeat;
@@ -422,11 +450,12 @@ body, html {
 }
 
 .name {
+    text-align: center
     margin-top: auto;
     margin-bottom: 5px;
     text-decoration: bold;
-    font-size: 60px;
-    color:  black;
+    font-size: 90px;
+    color:  white;
     font-family: "Monospace", "Courier New";
 }
 
@@ -601,4 +630,5 @@ li.tablelist {
 
 .gray {
     color: #262626;
+    text-align: left;
 }
