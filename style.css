@@ -33,7 +33,7 @@ h2 {
 }
 
 #grad {
-    background: radial-gradient(#e5f2ff,#e5f2ff,#e5f2ff, #e6e6e6); 
+    background: radial-gradient(#bfbfbf,#bfbfbf,#e5f2ff, #bfbfbf); 
 }
 
 #grad1 {
@@ -41,7 +41,7 @@ h2 {
 }
 
 #grad2 {
-    background: linear-gradient(#e5f2ff, white, white, white, white,#e5f2ff); 
+    background: linear-gradient(#f2f2f2, white, white, white, white,#f2f2f2); 
 }
 
 #grad3 {
@@ -63,7 +63,7 @@ ul.nav {
     position: fixed;
     top: 0px;
     width: 100%;
-    background-color: gray;
+    background-color: #a6a6a6;
     z-index: 500;
     padding: 9px, 12px;
 }
@@ -74,7 +74,7 @@ li.anna {
     font-size: 20px;
     display: block;
     float: left;
-    background-color: gray;
+    background-color: #a6a6a6;
     color: white;
     padding: 9px, 12px;
 }
@@ -94,7 +94,7 @@ li.anna a:hover {
 li.home {
     display: block;
     float: left;
-    background-color: gray;
+    background-color: #a6a6a6;
     color: white;
     font-family: "serif", "georgia";
 }
@@ -110,7 +110,7 @@ li.home a {
 li.nav {
     display: block;
     float: left;
-    background-color: gray;
+    background-color: #a6a6a6;
     color: white;
     font-family: "serif", "georgia";
 }
@@ -124,11 +124,11 @@ li.nav a {
 }
 
 li.nav a:hover {
-    background-color: #a6a6a6;
+    background-color: #bfbfbf;
 }
 
 .activeNav {
-    background-color: #80dfff;
+    background-color: #a6a6a6;
     padding-bottom: 2px;
 }
 
@@ -360,6 +360,14 @@ button.accordion {
     font-family: "Times New Roman", Times, serif;
 }
 
+.wordoutline {
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  color: #fff;
+    text-shadow: #000 2px 1px 1px;
+    -webkit-font-smoothing: antialiased;
+}
+
 /*  */
 button.accordion.active, button.accordion:hover {
     background-color: #fbdbff;
@@ -375,7 +383,7 @@ button.accordion.active, button.accordion:hover {
     transition: max-height 0.2s ease-out;
 }
 
-.portfolio {
+.buttons {
     border-radius: 15px;
     border-color: transparent;
     background-color: transparent;
@@ -384,15 +392,22 @@ button.accordion.active, button.accordion:hover {
     text-decoration: none;
     font-family: "Times New Roman", Times, serif;
     font-size:17px;
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word; 
+    display: -webkit-flex; /* Safari */
+  -webkit-flex-wrap: wrap; /* Safari 6.1+ */
+  display: flex;  
+  flex-wrap: wrap;
 }
 
-.portfolio a {
-    background-color: #737373;
+.buttons a {
+    background-color: #a6a6a6;
     padding: 20px;
 }
 
-.portfolio a:hover{
-    background-color: #b3b3b3;
+.buttons a:hover{
+    background-color: #bfbfbf;
     padding: 20px;
 }
 
@@ -440,7 +455,7 @@ body, html {
 
 
 .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.7)), url("images/heroimage.jpg");
+    background-image: linear-gradient(rgba(0, 85, 128, .25), rgba(0, 85, 128, 0.1), rgba(0, 85, 128, 0.1), rgba(0, 85, 128, .5)), url("images/heroimage.jpg");
     height: 80%;
     font-size: 20px;
     background-position: center;
