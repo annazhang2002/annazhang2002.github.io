@@ -133,7 +133,7 @@ li.nav a:hover {
 }
 
 footer {
-    background-color: gray;
+    background-color: #a6a6a6;
     float: bottom;
     margin: 0px;
 }
@@ -388,6 +388,9 @@ button.accordion.active, button.accordion:hover {
     border-radius: 15px;
     border-color: transparent;
     background-color: transparent;
+}
+
+.buttons a {
     color: white;
     margin: 10px;
     text-decoration: none;
@@ -396,26 +399,28 @@ button.accordion.active, button.accordion:hover {
     white-space: normal;
     word-wrap: break-word;
     overflow-wrap: break-word; 
-    /*
-    display: -webkit-flex; 
-  -webkit-flex-wrap: wrap;*/
-  display: flex;  
-  flex-wrap: wrap;
-  align-items: center;
-  margin-left: 10%;
-}
-
-.buttons a {
+    display: flex;  
+    flex-wrap: wrap;
+    align-items: center;
     background-color: #a6a6a6;
     padding: 20px;
 }
 
 .buttons a:hover{
+  color: white;
+    margin: 10px;
+    text-decoration: none;
+    font-family: "Times New Roman", Times, serif;
+    font-size:17px;
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word; 
+  display: flex;  
+  flex-wrap: wrap;
+  align-items: center;
     background-color: #bfbfbf;
     padding: 20px;
 }
-
-
 
 body, html {
     height: 100%;
