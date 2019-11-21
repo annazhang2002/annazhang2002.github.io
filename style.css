@@ -18,7 +18,7 @@ body {
     background-color: #e5f2ff;
 }
 
-p {
+p, h3{
     font-family: "serif", "Times New Roman";
 }
 
@@ -45,7 +45,7 @@ h2 {
 }
 
 #grad3 {
-    background: radial-gradient(white, white, #e5f2ff);
+    background: radial-gradient(#F0F9FF, #F0F9FF, #e5f2ff);
 }
 
 .firstnav {
@@ -344,8 +344,33 @@ body {font-family: Verdana,sans-serif;margin:0}
   
 }
 
+.wordoutline {
+  /*color: white;
+  text-shadow: -1px -1px 0 #000, 2px -1px 0 #000, -1px 1px 0 #000;
+  */
+  color: #fff;
+  text-shadow: #000 2px 1px 1px;
+   /* -webkit-font-smoothing: antialiased;*/
+}
+
+.portfolio {
+  border-color: #DFE9F7;
+  border-radius: 5px;
+  border-style: ridge;
+  width:25%;
+  margin-left:45px;
+  margin-right:25px
+}
+
+div.accordion {
+  width:70%;
+  border:none;
+  background-color: #e5f2ff;
+  border-width: 0px;
+}
+
 button.accordion {
-    background-color: #eee;
+    background-color: #DFE9F7;
     color: #444;
     cursor: pointer;
     padding: 18px;
@@ -360,18 +385,9 @@ button.accordion {
     font-family: "Times New Roman", Times, serif;
 }
 
-.wordoutline {
-  /*color: white;
-  text-shadow: -1px -1px 0 #000, 2px -1px 0 #000, -1px 1px 0 #000;
-  */
-  color: #fff;
-  text-shadow: #000 2px 1px 1px;
-   /* -webkit-font-smoothing: antialiased;*/
-}
 
-/*  */
 button.accordion.active, button.accordion:hover {
-    background-color: #fbdbff;
+    background-color: #cce6ff;
 }
 
 .panel {
@@ -598,9 +614,14 @@ li.tablelist {
 .column {
     float: left;
     padding: 10px;
-    border-style: ridge;
-    background-color:#dbdbdb;
-    border-color:#595959;
+    border-style: none;
+}
+
+.resgit {
+  width:50%;
+  padding: 10px;
+  border-style: ridge;
+  height: 800px;
 }
 
 /* Clear floats after the columns */
