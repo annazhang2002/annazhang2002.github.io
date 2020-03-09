@@ -1,83 +1,81 @@
 <!DOCTYPE html>
 <html>
+
+    <!--      HEAD          -->
     <head>
         <link rel="stylesheet" href="style.css"/>
         <title>Anna Zhang </title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
+
+
+    <!--      BODY          -->
     <body>
-      <div>
+
+      <!--      NAVIGATION BAR          -->
       <ul class="nav">
-            <li class="home" style="font-family:cursive;font-size:14px"><a href="index.html">ANNA ZHANG</a></li>
-            <li class="nav"><a class="activeNav" href="index.html" style="padding:9px, 12px">Home</a></li>
+            <li class="home"><a href="index.html">ANNA ZHANG</a></li>
+            <li class="nav"><a class="activeNav" href="index.html" >Home</a></li>
             <li class="nav"><a href="aboutme.html">Passion Projects</a></li>
             <li class="nav"><a href="experience.html">Experience</a></li>
             <li class="nav"><a href="portfolio.html">CS Portfolio</a></li>
             <li><a href="https://get.tech" target="_blank" ><img class="dottech" src="images/dottech.png"></a></li>
-            <!--<li class="nav"><a href="travels.html">My Travels</a> </li>-->
       </ul>
-      </div>
-        <div class="hero-image">
+      
+
+        <!--      HERO IMAGE         -->
+        <div class="hero-image"> </div>  
+
+        <!--      HERO TEXT          -->
           <div class="hero-text">
-            <h1 class="name wordoutline">Anna</h1>
-            
+              <h1 class="name wordoutline">Anna</h1>
           </div>
           <div class="hero-text-zhang wordoutline">
             <h1 class="name">Zhang</h1>
-            
           </div>
+
+          <!--      MINI DESCRIPTION          -->
           <div class="hero-text-right" >
-          <p style="font-size:24px;color: white" class="wordoutline">An innovative and motivated student passionate about computer science and environmental sustainability</p>
-          <!--<br>Click below to learn more about me, my interests and the projects I have been working on!-->
+            <p style="font-size:24px;color: white" class="wordoutline">An innovative and motivated student passionate about computer science and environmental sustainability</p>
             <div><button class="buttons"><a href="aboutme.html" class="buttons">My Passion Projects!</a></button></div>
           </div>
-        </div>  
 
-        <p class="larger">I am an <strong>explorer</strong> and an <i>innovator</i></p>
+          <br>
 
-        <div class="row">
-          <div class="column"  style="width:40%;margin-left:5%;margin-right:5%;border:none; background-color:#e5f2ff" >
+        <div class="row" style="padding-top:5%">
+
+          <!--      SLIDESHOW GALLERY!          -->
+          <div class="column slides">
             <div class="slideshow-container">
-                <div class="mySlides fade">
-                    <img  class="image" src="https://i.pinimg.com/originals/fd/01/45/fd014588e55fcb89a4a98383b74cc9eb.jpg">
+                <div class="mySlides">
+                    <img  class="image" src="images/profile1.jpg">
                 </div>
-                <div class="mySlides fade">
-                      <img class="image" src="images/sunsetprofile.jpg">
-                </div>
-    
-                <div class="mySlides fade">
-                    <img  class="image" src="images/profile.JPG">
+                <div class="mySlides">
+                    <img class="image" src="images/profile2.jpg">
                 </div>
     
-                <div class="mySlides fade">
-                         <img class="image" src="images/anotherprofile.JPG">
+                <div class="mySlides">
+                    <img  class="image" src="images/profile3.jpg">
                 </div>
-                <div class="mySlides fade">
-                    <img  class="image" src="images/anna.jpeg">
+    
+                <div class="mySlides">
+                    <img class="image" src="images/profile4.jpg">
                 </div>
-                
-            
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                <div class="mySlides">
+                    <img  class="image" src="images/profile5.jpg">
+                </div>
     
         </div>
         <br>
-    
-        <div style="text-align:center">
-          <span class="dot" onclick="currentSlide(1)"></span> 
-          <span class="dot" onclick="currentSlide(2)"></span> 
-          <span class="dot" onclick="currentSlide(3)"></span> 
-          <span class="dot" onclick="currentSlide(4)"></span>
-          <span class="dot" onclick="currentSlide(5)"></span>
-        </div>
         
         <br>
         
         
         </div>
         
-        <div class="column"  style="width:45%;margin-right:5%; border:none; background-color:#e5f2ff;align-items: center">
-          <h2 stlye="margin-top:0px">Personal Biography</h2>
+        <!--      PERSONAL DESCRIPTION          -->
+        <div class="column"  style="width:45%;align-items: center">
+          <h2>Personal Biography</h2>
           <p style="font-size:20px">Anna Zhang is a hardworking freshman at Yale University who is interested in pursuing a career in computer science. Determined to make a difference in her community and in the world, Anna dreams of developing innovative technology that can specifically preserve the environment. After spending several weeks studying abroad in Costa Rica, Anna learned about the importance of environmental conservation, which motivated her to dedicate her life to saving the Earth. She envisions a myriad of potential career paths ranging from software engineering to product management to environmental policy to even possibly founding her own eco-friendly tech company. As a student activist, Anna advocates for a variety of causes such as women's rights, environmental protection, minority representation etc. </p>
           <br>
         <div><button class="buttons"><a class="buttons" href="portfolio.html">Learn more about my coding experience!</a></button></div>
@@ -85,37 +83,29 @@
 
         </div>
         
-        
+        <!--      SCRIPT FOR THE AUTOMATIC GALLERY          -->
         <script>
-        var slideIndex = 1;
-        showSlides(slideIndex);
-        
-        function plusSlides(n) {
-          showSlides(slideIndex += n);
-        }
-        
-        function currentSlide(n) {
-          showSlides(slideIndex = n);
-        }
-        
-        function showSlides(n) {
-          var i;
-          var slides = document.getElementsByClassName("mySlides");
-          var dots = document.getElementsByClassName("dot");
-          if (n > slides.length) {slideIndex = 1}    
-          if (n < 1) {slideIndex = slides.length}
-          for (i = 0; i < slides.length; i++) {
-              slides[i].style.display = "none";  
+          var slideIndex = 0;
+          showSlides();
+
+          function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            slides[slideIndex-1].style.display = "block";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
           }
-          for (i = 0; i < dots.length; i++) {
-              dots[i].className = dots[i].className.replace(" active", "");
-          }
-          slides[slideIndex-1].style.display = "block";  
-          dots[slideIndex-1].className += " active";
-        }
-    </script>
+
+        </script>
       
     </body>
+
+
+    <!--      FOOTER          -->
     <footer>
       <br>
         <a href="mailto:anna.zhang@yale.edu" target="_blank" class="fa fa-google"> </a>
@@ -124,4 +114,6 @@
         <a href="https://www.linkedin.com/in/annazhang2002" target="_blank" class="fa fa-linkedin"></a>
         <p class="credits">Programmed by Anna Zhang</p>
     </footer>
+
+
 </html>

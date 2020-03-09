@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html>
+
+    <!--      HEAD          -->
     <head>
         <link rel="stylesheet" href="style.css"/>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title>Portfolio</title>
     </head>
+
+    <!--      BODY          -->
     <body>
+
+        <!--      NAVIGATION BAR          -->
         <ul class="nav">
-            <li class="nav" style="font-family:cursive;font-size:14px"><a href="index.html">ANNA ZHANG</a></li>
+            <li class="home"><a href="index.html">ANNA ZHANG</a></li>
             <li class="nav"><a href="index.html">Home</a></li>
             <li class="nav"><a href="aboutme.html">Passion Projects</a></li>
             <li class="nav"><a href="experience.html">Experience</a></li>
@@ -16,39 +22,53 @@
             <li><a href="https://get.tech" target="_blank" ><img class="dottech" src="images/dottech.png"></a></li>
             <!--<li class="nav"><a href="travels.html">My Travels</a> </li>-->
         </ul>
+
+        <!--      HERO IMAGE          -->
         <div class="hero-image1">
           <div class="hero-text1">
-            <h1 class="name1">My CS Portfolio</h1>
+            <h1 class="header">My CS Portfolio</h1>
           </div>
         </div> 
         <br>
+
+        <!--      ROW TO HOLD THE COLUMNS          -->
     <div class="row">
-      <div class="column portfolio" id="grad3" style="border-style: ridge;">
+
+        <!--      BRIEF DESCRIPTION OF THE PORTFOLIO         -->
+      <div class="column portfolio">
           <h3>What is in my portfolio?</h3>
           <p>Here you can find some of my programming works. Just click one of the boxes and it will open up the sources to me various programming projects. If you are interested in viewing my code for any of these projects, please take a look at my <a href="https://github.com/annazhang2002">Github account</a></p>
       </div>
-      <!--id="grad2" style="background-color:white;width:65%;"-->
+
+      <!--      ACCORDION WITH ALL OF MY PROJECTS         -->
       <div class="column accordion" >
+
+        <!--      PERSONAL WEBSITE PROJECT          -->
         <button class="accordion">Personal Website</button>
             <div class="panel">
                <p>Well, you found it! Here is the url for your convenience : <a href="https://annazhang.tech">annazhang.tech</a>. I made this entire website out of html and css. I worked on it for hours on end during a hakathon called GunnHacks. I always try to find time each day to work on it whether by adding a picture or completely changing the formatting. </p>
             </div>
-            
+        
+        <!--      COSMOS APP PROJECT          -->
         <button class="accordion">First Combat Sound Simulator App</button>
             <div class="panel">
                <p>Over the summer of 2018 at COSMOS, I created this 3D sound simulating app that helps military recruits train in a virtual sound environment, helping them get accustomed to the loud artillery noises, so that once in an actual battle they can focus on their mission and target. Using MetaWear C sensors, the program adjusts the positions of the various sounds based on the user's head position. Here is the link to the <a href="https://github.com/annazhang2002/FirstCombatSoundSimulator" target="_blank">github repository</a></p>
             </div>
 
+
+        <!--      MY TIC TAC TOE APP PROJECT          -->
         <button class="accordion">Tic Tac Toe App</button>
             <div class="panel">
                <p> I created this app in XCode with Swift without having ever taken a course or being taught Swift, learning how to use the software from online tutorials. I implemented two different playing modes: multiplayer and single player. In the multiplayer mode, the user can grab a friend to play with them on the same screen. For single player, the user chooses a CPU level ranging from an easy opponent who chooses randomly to an unbeatable opponent. I have not published this app to the App Store just yet, but here is the link to my <a href="https://github.com/annazhang2002/tictactoe" target="_blank">github repository</a>.</p>
             </div>
 
+        <!--      STANFORD PRECOLLEGIATE SUMMER INSTITUTES PROJECT          -->
         <button class="accordion">Pico 8 Game : Rainforest Rescue</button>
             <div class="panel">
                <p>In the summer of 2017, I attended the Stanford Pre-Collegiate Summer Institutes and took a course entitled Computer Simulations and Interactive Media. In this course, I created by own game on Pico 8 called Rainforest Rescue. I have uploaded it to the splore page and you can play a version of it here : <a href="https://www.lexaloffle.com/bbs/?tid=30130" target="_blank">Rainforest Rescue</a> </p>
             </div>
             
+        <!--      APCS PROJECT          -->
         <button class="accordion">AP Computer Science Project</button>
             <div class="panel">
                <p>Click this <a href="apcs.html">LINK</a> to access my AP Computer Science Spring Final</p>
@@ -56,6 +76,8 @@
       </div>
       
     </div>  
+
+    <!--      SCRIPT FOR THE ACCORDION          -->
     <script>
         var acc = document.getElementsByClassName("accordion");
         var i;
@@ -88,6 +110,8 @@
     </script>
     <br>
     </body>
+
+    <!--        FOOTER          -->
     <footer>
       <br>
         <a href="mailto:anna.zhang@yale.edu" target="_blank" class="fa fa-google"></a>
@@ -96,4 +120,6 @@
         <a href="https://www.linkedin.com/in/annazhang2002" target="_blank" class="fa fa-linkedin"></a>
         <p class="credits">Programmed by Anna Zhang</p>
     </footer>
+
+
 </html>
