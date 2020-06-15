@@ -8,4 +8,4 @@ On my website, you can find information about my passion projects, my computer s
 
 ## Website Demo
 
-<img src="http://g.recordit.co/dkPWRBChF4.gif" width=200><br>
+<img src="http://g.recordit.co/zeE3xET7JT.gif" width=700><br>
