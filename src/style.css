@@ -1,0 +1,54 @@
+/************** NAV BAR  ********************/
+/* general nav bar layout / padding */
+.navbar {
+	padding: 20px 30px 18px 50px;
+	color: white;
+}
+
+/* general header (e.g. coloring, position ) */
+.header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1000;
+}
+
+/* padding to make sure everything starts below the nav bar */
+.after-heading {
+	padding-top: 92px;
+	position: relative;
+}
+
+/* button to toggle menu in mobile */
+.navbar-toggler {
+	border-color: white;
+	border-width: 3px;
+	border-radius: 5px;
+}
+
+/* links in nav bar */
+.links {
+	height: auto;
+	display: flex;
+	float: right;
+	text-decoration: none;
+}
+
+/* list of nav items */
+li.nav {
+	padding: 0 15px;
+}
+
+/* colors and fonts of nav links */
+.navbar-dark .navbar-nav .nav-link {
+	font-size: 17px;
+	color: black;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 17px;
+	line-height: 22px;
+}
+.navbar-dark .navbar-toggler {
+	border-color: white;
+	border-width: 2px;
+}
