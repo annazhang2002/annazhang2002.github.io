@@ -21,7 +21,6 @@
 
 /* button to toggle menu in mobile */
 .navbar-toggler {
-	border-color: white;
 	border-width: 3px;
 	border-radius: 5px;
 }
