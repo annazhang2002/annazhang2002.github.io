@@ -1,9 +1,10 @@
 export default {
-	darkest: 'cyan',
+	darkest: '#272635',
 	accent: '#c717fc',
-	lightest: '#FFFFFF',
+	lightest: '#F8F8FF',
 	dark: '',
 	light: '',
 
-	black: '#000000'
+	black: '#000000',
+	white: '#FFFFFF'
 };

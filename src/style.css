@@ -1,7 +1,103 @@
+/******************** GENERAL ***************/
+.center-text {
+	text-align: center;
+}
+
+/* general padding, spacing, and colors */
+.section {
+	width: 100%;
+	padding: 5%;
+	padding-left: 12%;
+	padding-right: 12%;
+	background-color: white;
+	color: black;
+}
+
+/* adding shadows to the buttons */
+.shadow {
+	box-shadow: 5px 10px 10px #888888;
+}
+
+.a:hover {
+	text-decoration: none;
+}
+
+/********** SOCIAL MEDIA ICONS ************/
+.fa {
+	padding: 15px;
+	font-size: 30px;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	text-decoration: none;
+	margin: 5px 18px;
+	border: 2px solid white;
+	border-radius: 50%;
+	color: white;
+}
+
+.fa:hover {
+	opacity: 0.7;
+	color: white;
+	text-decoration: none;
+}
+
+/*************** FLEXBOX  TOOLS ************/
+
+/* variants on containers */
+.my-container {
+	display: flex;
+	align-items: center;
+	align-content: space-around;
+}
+
+/* different ways to justify content */
+.space {
+	justify-content: space-around;
+}
+
+.between {
+	justify-content: space-between;
+}
+
+.center {
+	justify-content: center;
+}
+
+/* set flex direction  */
+.column-dir {
+	flex-direction: column;
+}
+
+.row-dir {
+	flex-direction: row;
+}
+
+/* align items  */
+.top-align {
+	align-items: start;
+}
+
+.stretch {
+	align-items: stretch;
+}
+
+/* linear-gradient(rgba(109, 109, 109, 0.3), rgba(109, 109, 109, 0.3)),  */
+/***************** HOME PAGE ****************/
+.hero-img {
+	width: 100%;
+	background-image: linear-gradient(rgba(109, 109, 109, 0.3), rgba(109, 109, 109, 0.3)), url("images/heroimage.jpg");
+	background-repeat: no-repeat;
+	min-height: 100vh;
+	padding: 0px;
+	background-position: center;
+	background-size: cover;
+}
+
 /************** NAV BAR  ********************/
 /* general nav bar layout / padding */
 .navbar {
-	padding: 20px 30px 18px 50px;
+	padding: 30px 50px 10px 50px;
 	color: white;
 }
 
@@ -11,12 +107,6 @@
 	top: 0;
 	width: 100%;
 	z-index: 1000;
-}
-
-/* padding to make sure everything starts below the nav bar */
-.after-heading {
-	padding-top: 92px;
-	position: relative;
 }
 
 /* button to toggle menu in mobile */
@@ -35,18 +125,25 @@
 
 /* list of nav items */
 li.nav {
-	padding: 0 15px;
+	padding: 0 30px;
 }
 
 /* colors and fonts of nav links */
 .navbar-dark .navbar-nav .nav-link {
 	font-size: 17px;
-	color: black;
+	color: #f8f8ff;
 	font-style: normal;
 	font-weight: 500;
 	font-size: 17px;
 	line-height: 22px;
+	text-shadow: 1px 1px 20px #272635;
+	padding-left: 25px;
 }
+.navbar-dark .navbar-nav .nav-link:hover {
+	color: white;
+	text-decoration: none;
+}
+
 .navbar-dark .navbar-toggler {
 	border-color: white;
 	border-width: 2px;
