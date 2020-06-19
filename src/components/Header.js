@@ -3,6 +3,8 @@ import { Navbar, Nav } from 'react-bootstrap';
 import '../style.css';
 import { Link } from 'react-router-dom';
 
+import Resume from '../images/resume.pdf';
+
 import Colors from '../colors';
 const color = Colors.darkest;
 const black = Colors.black;
@@ -19,7 +21,7 @@ class Header extends Component {
 	};
 
 	headerColor = () => {
-		if (!this.state.atTop || this.state.toggleOpen) {
+		if (!this.state.atTop || this.state.toggleOpen || this.props.solid) {
 			return { backgroundColor: color };
 		} else {
 			return { backgroundColor: 'transparent' };
@@ -60,7 +62,7 @@ class Header extends Component {
 								to="/"
 								style={styles.navLink}
 								className="nav-link"
-								onClick={() => window.scrollTo(0, 0)}
+								onClick={() => window.scrollTo('#portfolio')}
 							>
 								Portfolio
 							</Link>
@@ -72,14 +74,14 @@ class Header extends Component {
 							>
 								About
 							</Link>
-							<Link
-								to="/resume"
-								style={styles.navLink}
+							<a
+								href={Resume}
+								target="_blank"
+								style={(styles.navLink, { color: Colors.lightest })}
 								className="nav-link"
-								onClick={() => window.scrollTo(0, 0)}
 							>
 								Resume
-							</Link>
+							</a>
 							<Link
 								to="/contact"
 								style={styles.navLink}

@@ -7,10 +7,18 @@
 .section {
 	width: 100%;
 	padding: 5%;
-	padding-left: 12%;
-	padding-right: 12%;
+	padding-left: 15%;
+	padding-right: 15%;
 	background-color: white;
 	color: black;
+}
+
+/* body background color */
+body {
+	background-color: #f8f8ff;
+}
+html {
+	scroll-behavior: smooth;
 }
 
 /* adding shadows to the buttons */
@@ -18,8 +26,14 @@
 	box-shadow: 5px 10px 10px #888888;
 }
 
-.a:hover {
+/* links */
+a:hover {
 	text-decoration: none;
+}
+
+/* full width images */
+.full-img {
+	width: 100%;
 }
 
 /********** SOCIAL MEDIA ICONS ************/
@@ -97,7 +111,7 @@
 /************** NAV BAR  ********************/
 /* general nav bar layout / padding */
 .navbar {
-	padding: 30px 50px 10px 50px;
+	padding: 23px 50px 10px 50px;
 	color: white;
 }
 

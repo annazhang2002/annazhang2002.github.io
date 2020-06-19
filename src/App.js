@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Route } from 'react-router-dom';
 
 import Homepage from './screens/Homepage';
+import About from './screens/About';
 
 const App = () => (
 	<div className="center-text">
@@ -12,6 +13,7 @@ const App = () => (
 		/>
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 		<Route path="/" exact component={Homepage} />
+		<Route path="/about" exact component={About} />
 	</div>
 );
 
