@@ -3,15 +3,26 @@ import '../style.css';
 
 import Colors from '../colors';
 
-const Socials = () => {
+const Socials = (props) => {
+	const styles = {
+		icon: {
+			color: props.color,
+			borderColor: props.color
+		},
+		email: {
+			fontSize: '18px',
+			color: props.color,
+			borderColor: props.color
+		}
+	};
 	return (
 		<div className="my-container space">
-			<i class="material-icons fa" style={{ fontSize: '18px' }}>
+			<i class="material-icons fa" style={styles.email}>
 				email
 			</i>
-			<a href="#" class="fa fa-linkedin" />
-			<a href="#" class="fa fa-github" />
-			<a href="#" class="fa fa-facebook" />
+			<a href="#" style={styles.icon} class="fa fa-linkedin" />
+			<a href="#" style={styles.icon} class="fa fa-github" />
+			<a href="#" style={styles.icon} class="fa fa-facebook" />
 		</div>
 	);
 };

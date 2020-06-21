@@ -26,7 +26,7 @@ const Homepage = () => (
 					<p style={styles.bio}>
 						An undergrad CS student passionate about computer science, sustainability, and psychology.
 					</p>
-					<Socials />
+					<Socials color={Colors.white} />
 				</div>
 			</div>
 		</div>
@@ -215,7 +215,8 @@ const styles = {
 	},
 	heroText: {
 		width: '35%',
-		color: Colors.white
+		color: Colors.white,
+		textShadow: '1px 1px 20px #272635'
 	},
 	bio: {
 		fontWeight: '500',
@@ -226,7 +227,7 @@ const styles = {
 		fontSize: '96px',
 		lineHeight: '117px',
 		color: Colors.white,
-		textShadow: '5px 5px 5px #423F4E'
+		textShadow: '5px 5px 10px #423F4E'
 	},
 	carouselInfoContainer: {
 		padding: '50px',
@@ -236,7 +237,8 @@ const styles = {
 		padding: '40px',
 		margin: '10px',
 		border: '2px solid ',
-		borderColor: Colors.lightBlue
+		borderColor: Colors.lightBlue,
+		boxShadow: '2px 5px 8px #888888'
 	},
 	cardImg: {
 		marginBottom: '30px'

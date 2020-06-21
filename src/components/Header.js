@@ -62,7 +62,7 @@ class Header extends Component {
 								to="/"
 								style={styles.navLink}
 								className="nav-link"
-								onClick={() => window.scrollTo('#portfolio')}
+								onClick={() => window.scrollTo(0, 650)}
 							>
 								Portfolio
 							</Link>
@@ -82,14 +82,22 @@ class Header extends Component {
 							>
 								Resume
 							</a>
-							<Link
-								to="/contact"
-								style={styles.navLink}
+							<a
+								href="https://github.com/annazhang2002"
+								target="_blank"
+								style={(styles.navLink, { color: Colors.lightest })}
 								className="nav-link"
-								onClick={() => window.scrollTo(0, 0)}
 							>
-								Contact
-							</Link>
+								Github
+							</a>
+							<a
+								href="https://www.linkedin.com/in/annazhang2002/"
+								target="_blank"
+								style={(styles.navLink, { color: Colors.lightest })}
+								className="nav-link"
+							>
+								LinkedIn
+							</a>
 						</Nav>
 					</Navbar.Collapse>
 				</Navbar>

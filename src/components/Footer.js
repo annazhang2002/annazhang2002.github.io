@@ -17,7 +17,7 @@ const Footer = () => {
 					<h2>anna.zhang@yale.edu</h2>
 				</div>
 
-				<Socials />
+				<Socials color={Colors.black} />
 			</div>
 		</div>
 	);
@@ -25,9 +25,9 @@ const Footer = () => {
 
 const styles = {
 	footer: {
-		backgroundColor: Colors.darkest,
+		backgroundColor: Colors.lightest,
 		height: '220px',
-		color: Colors.white
+		color: Colors.black
 	},
 	dottech: {
 		bottom: '1%',

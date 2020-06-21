@@ -10,6 +10,8 @@
 		"react": "^16.13.1",
 		"react-bootstrap": "^1.0.1",
 		"react-dom": "^16.13.1",
+		"react-grid-gallery": "^0.5.5",
+		"react-photo-gallery": "^8.0.0",
 		"react-router-dom": "^5.2.0",
 		"react-scripts": "3.4.1"
 	},

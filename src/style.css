@@ -13,6 +13,11 @@
 	color: black;
 }
 
+/* section heading */
+.section-heading {
+	margin-bottom: 40px;
+}
+
 /* body background color */
 body {
 	background-color: #f8f8ff;
@@ -102,6 +107,7 @@ a:hover {
 	width: 100%;
 	background-image: linear-gradient(rgba(109, 109, 109, 0.3), rgba(109, 109, 109, 0.3)), url("images/heroimage.jpg");
 	background-repeat: no-repeat;
+	background-attachment: fixed;
 	min-height: 100vh;
 	padding: 0px;
 	background-position: center;
