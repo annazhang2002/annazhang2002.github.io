@@ -10,6 +10,8 @@ import Tag from '../components/Tag';
 import Footer from '../components/Footer';
 import ProjectCard from '../components/ProjectCard';
 
+import dottech from '../images/dottech.png';
+
 /**** FEATURE PROJECT IMAGES ******/
 /* dimensions are 118* 1254 */
 import pills2me from '../images/projects/pills2me-web.png';
@@ -21,6 +23,7 @@ import fcss from '../images/projects/fcss-app.png';
 import pills2meGif from '../images/projects/pills2me-gif.gif';
 import fcssMe from '../images/projects/fcss.jpg';
 import tictactoe from '../images/projects/tictactoe.png';
+import rainforest from '../images/projects/rainforest.gif';
 import codehaven from '../images/projects/codehaven.png';
 import wics from '../images/projects/wics.png';
 import php from '../images/projects/php.png';
@@ -175,7 +178,7 @@ const Homepage = () => (
 				<Col lg={4}>
 					<ProjectCard
 						title="Rainforest Rescue"
-						img="http://g.recordit.co/loVx0jxw1v.gif"
+						img={rainforest}
 						url="https://github.com/annazhang2002/RainforestRescue"
 						text="A game designed to educate people about the threats tropical rainforests are facing"
 						tags={

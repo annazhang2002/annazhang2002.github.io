@@ -9,30 +9,39 @@ import Socials from './Socials';
 
 const Footer = () => {
 	return (
-		<div>
+		<div style={{ backgroundColor: Colors.darkest }}>
 			{/* <img src={dottech} style={styles.dottech} /> */}
 			<div className="my-container  column-dir space" style={styles.footer}>
 				<div>
-					<p>Feel free to reach out to me and get in contact</p>
-					<h2>anna.zhang@yale.edu</h2>
+					<p>Feel free to reach out to me and get in contact!</p>
 				</div>
 
-				<Socials color={Colors.black} />
+				<Socials color={Colors.white} />
 			</div>
+			<p style={styles.bottomText}>
+				Programmed in ReactJS and with the support of <img src={dottech} style={styles.dottech} />
+			</p>
 		</div>
 	);
 };
 
 const styles = {
 	footer: {
-		backgroundColor: Colors.lightest,
-		height: '220px',
-		color: Colors.black
+		backgroundColor: Colors.darkest,
+		height: '130px',
+		color: Colors.white,
+		padding: '5%'
 	},
 	dottech: {
-		bottom: '1%',
-		left: '1%',
+		textAlign: 'left',
+		bottom: '5px',
+		left: '5px',
 		width: '30px'
+	},
+	bottomText: {
+		fontSize: '10px',
+		color: Colors.white,
+		marginBottom: '0px'
 	}
 };
 

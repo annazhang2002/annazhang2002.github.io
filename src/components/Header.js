@@ -3,12 +3,11 @@ import { Navbar, Nav } from 'react-bootstrap';
 import '../style.css';
 import { Link } from 'react-router-dom';
 
+import logoWhite from '../images/logo-white.png';
 import Resume from '../images/resume.pdf';
 
 import Colors from '../colors';
 const color = Colors.darkest;
-const black = Colors.black;
-const white = Colors.white;
 
 class Header extends Component {
 	state = {
@@ -49,10 +48,15 @@ class Header extends Component {
 			<div className="header" style={this.headerColor()}>
 				<Navbar collapseOnSelect expand="lg" bg="" variant="dark">
 					<Link to="/" className="my-container logo" onClick={() => window.scrollTo(0, 0)}>
-						<h3 style={styles.nameLink} className="nav-link">
+						{/* <h3 style={styles.nameLink} className="nav-link">
 							Anna Zhang
-						</h3>
-						{/* <img alt="Pills2Me" src={this.logoColor()} className="d-inline-block align-top logo" /> */}
+						</h3> */}
+						<img
+							alt="Anna Zhang"
+							src={logoWhite}
+							className="d-inline-block align-top logo"
+							style={styles.logo}
+						/>
 					</Link>
 					<Navbar.Toggle onClick={this.Toggle} aria-controls="responsive-navbar-nav" />
 					<Navbar.Collapse id="responsive-navbar-nav">
@@ -114,6 +118,9 @@ const styles = {
 		color: Colors.lightest,
 		textDecoration: 'none',
 		textShadow: '1px 1px 20px #272635'
+	},
+	logo: {
+		height: '30px'
 	}
 };
 
