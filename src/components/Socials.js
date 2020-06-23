@@ -17,12 +17,18 @@ const Socials = (props) => {
 	};
 	return (
 		<div className="my-container space">
-			<i class="material-icons fa" style={styles.email}>
-				email
-			</i>
-			<a href="#" style={styles.icon} class="fa fa-linkedin" />
-			<a href="#" style={styles.icon} class="fa fa-github" />
-			<a href="#" style={styles.icon} class="fa fa-facebook" />
+			<a href="mailto:anna.zhang@yale.edu">
+				<i class="material-icons fa" style={styles.email}>
+					email
+				</i>
+			</a>
+			<a href="https://www.linkedin.com/in/annazhang2002/" style={styles.icon} class="fa fa-linkedin" />
+			<a href="https://github.com/annazhang2002" style={styles.icon} class="fa fa-github" />
+			<a
+				href="https://www.facebook.com/profile.php?id=100011715346775"
+				style={styles.icon}
+				class="fa fa-facebook"
+			/>
 		</div>
 	);
 };

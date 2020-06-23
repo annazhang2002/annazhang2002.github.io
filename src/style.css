@@ -31,9 +31,13 @@ html {
 	box-shadow: 5px 10px 10px #888888;
 }
 
+a {
+	color: black;
+}
 /* links */
 a:hover {
 	text-decoration: none;
+	color: #595959;
 }
 
 /* full width images */

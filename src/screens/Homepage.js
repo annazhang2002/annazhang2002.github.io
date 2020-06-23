@@ -54,7 +54,7 @@ const Homepage = () => (
 
 		{/************* FEATURED PROJECTS *********************/}
 		<div className="section" id="portfolio">
-			<h3 style={{ textAlign: 'left' }}>Featured Projects</h3>
+			<h3 style={{ textAlign: 'left', marginBottom: '30px' }}>Featured Projects</h3>
 			<Carousel className="shadow">
 				<Carousel.Item>
 					<Row>

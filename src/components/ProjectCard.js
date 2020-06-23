@@ -5,16 +5,14 @@ import Colors from '../colors';
 
 const ProjectCard = (props) => {
 	return (
-		<div className="my-container column-dir between" style={styles.cardContainer}>
-			<img src={props.img} className="full-img" style={styles.cardImg} />
-			<h2>
-				<a href={props.url} target="_blank">
-					{props.title}
-				</a>
-			</h2>
-			<p style={styles.cardInfo}>{props.text}</p>
-			{props.tags}
-		</div>
+		<a href={props.url} target="_blank">
+			<div className="my-container column-dir between" style={styles.cardContainer}>
+				<img src={props.img} className="full-img" style={styles.cardImg} />
+				<h2>{props.title}</h2>
+				<p style={styles.cardInfo}>{props.text}</p>
+				{props.tags}
+			</div>
+		</a>
 	);
 };
 
