@@ -18,6 +18,11 @@
 	margin-bottom: 40px;
 }
 
+.section-title {
+	font-size: 60px;
+	margin-bottom: 20px;
+}
+
 /* body background color */
 body {
 	background-color: #f8f8ff;
@@ -63,6 +68,10 @@ a:hover {
 	opacity: 0.7;
 	color: white;
 	text-decoration: none;
+}
+
+.email {
+	font-size: 18px;
 }
 
 /*************** FLEXBOX  TOOLS ************/
@@ -116,6 +125,53 @@ a:hover {
 	padding: 0px;
 	background-position: center;
 	background-size: cover;
+}
+.heroContainer {
+	width: 100%;
+	padding: 13%;
+	height: 100vh;
+}
+.heroText {
+	width: 35%;
+	color: white;
+	text-shadow: 1px 1px 20px #272635;
+}
+.bio {
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 33px;
+}
+.heroAnna {
+	font-size: 96px;
+	line-height: 117px;
+	color: white;
+	text-shadow: 5px 5px 10px #423f4e;
+}
+
+/************ FEATURED PROJECTS CAROUSEL ***********/
+.carouselInfoContainer {
+	padding: 50px;
+}
+.carouselInfo {
+	text-align: justify;
+	margin: 20px;
+	padding: 0px;
+}
+
+/*************** PROJECT CARDS ********************/
+.cardContainer {
+	padding: 20px;
+	margin: 10px;
+	box-shadow: 2px 5px 8px #888888;
+	height: 100%;
+}
+.cardImg {
+	margin-bottom: 30px;
+}
+.cardInfo {
+	text-align: justify;
+	font-size: 12px;
+	margin-top: 20px;
 }
 
 /************** NAV BAR  ********************/
@@ -171,4 +227,76 @@ li.nav {
 .navbar-dark .navbar-toggler {
 	border-color: white;
 	border-width: 2px;
+}
+
+/************************************************************************/
+/**********************  MOBILE STYING **********************************/
+/************************************************************************/
+
+@media only screen and (max-width: 768px) {
+	/************** GENERAL MOBILE ***************/
+	.section {
+		padding: 15px;
+	}
+
+	/*************** HERO IMAGE *************/
+	.hero-img {
+		min-height: auto;
+		background-position: center;
+	}
+	.heroContainer {
+		height: auto;
+	}
+	.heroAnna {
+		font-size: 50px;
+		line-height: normal;
+		padding: 10px;
+	}
+	.heroText {
+		font-size: 20px;
+		width: 95%;
+	}
+	.bio {
+		font-size: 15px;
+		line-height: normal;
+		padding-bottom: 10px;
+	}
+
+	/************ SOCIAL MEDIA ICONS MOBILE *****************/
+	.fa {
+		font-size: 18px;
+		width: 50px;
+		height: 450x;
+		margin: 5px 10px;
+		border: 2px solid white;
+	}
+
+	/****************** MOBILE PORTFOLIO ****************************/
+	.carouselInfoContainer {
+		padding: 30px;
+	}
+	.carouselInfo {
+		margin: 20px;
+		padding: 0px;
+		font-size: 15px;
+	}
+	.project-title {
+		font-size: 30px;
+	}
+
+	/********** MOBILE PROJECT CARDS ***************/
+	.cardImg {
+		width: 70%;
+		margin-bottom: 10px;
+	}
+	.cardInfo {
+		text-align: justify;
+		font-size: 12px;
+		margin: 10px;
+	}
+	.section-title {
+		font-size: 50px;
+		margin-top: 30px;
+		margin-bottom: 10px;
+	}
 }

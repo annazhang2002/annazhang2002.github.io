@@ -18,7 +18,7 @@ const Socials = (props) => {
 	return (
 		<div className="my-container space">
 			<a href="mailto:anna.zhang@yale.edu">
-				<i class="material-icons fa" style={styles.email}>
+				<i class="material-icons fa email" style={styles.email}>
 					email
 				</i>
 			</a>

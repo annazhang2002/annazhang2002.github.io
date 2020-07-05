@@ -5,10 +5,12 @@ import '../style.css';
 import Colors from '../colors';
 
 import Header from '../components/Header';
-import Socials from '../components/Socials';
+
 import Tag from '../components/Tag';
 import Footer from '../components/Footer';
 import ProjectCard from '../components/ProjectCard';
+import Hero from '../components/Hero';
+import CarouselItem from '../components/CarouselItem';
 
 import dottech from '../images/dottech.png';
 
@@ -37,91 +39,59 @@ const Homepage = () => (
 		<Header solid={false} />
 
 		{/************* HERO IMAGE *********************/}
-		<div className="hero-img">
-			<div className="my-container between" style={styles.heroContainer}>
-				<div className="my-container column-dir ">
-					<h1 style={styles.heroAnna}>Anna</h1>
-					<h1 style={styles.heroAnna}>Zhang</h1>
-				</div>
-				<div className="my-container column-dir " style={styles.heroText}>
-					<p style={styles.bio}>
-						An undergrad CS student passionate about computer science, sustainability, and psychology.
-					</p>
-					<Socials color={Colors.white} />
-				</div>
-			</div>
-		</div>
-
+		<Hero />
 		{/************* FEATURED PROJECTS *********************/}
 		<div className="section" id="portfolio">
 			<h3 style={{ textAlign: 'left', marginBottom: '30px' }}>Featured Projects</h3>
 			<Carousel className="shadow">
 				<Carousel.Item>
-					<Row>
-						<Col md={6} className="my-container column-dir center" style={styles.carouselInfoContainer}>
-							<h1>
-								<a href="https://www.pills2me.com/">Pills2Me Web Development</a>
-							</h1>
-							<p style={styles.carouselInfo}>
-								As the software engineering intern, I developed a ReactJS website for Pills2Me, a
-								startup that connects elderly patients with volunteer drivers for free same-day
-								medication delivery
-							</p>
+					<CarouselItem
+						title="Pills2Me Web Development"
+						url="https://www.pills2me.com/"
+						description="As the software engineering intern, I developed a ReactJS website for Pills2Me, a
+					startup that connects elderly patients with volunteer drivers for free same-day
+					medication delivery"
+						tags={
 							<div className="my-container space">
 								<Tag name="Web Dev" color={Colors.webTag} />
 								<Tag name="Frontend" color={Colors.frontendTag} />
 							</div>
-						</Col>
-						<Col md={6} style={{ paddingLeft: '0px' }}>
-							<img src={pills2me} className="full-img" />
-						</Col>
-					</Row>
+						}
+						img={pills2me}
+					/>
 				</Carousel.Item>
+
 				<Carousel.Item>
-					<Row>
-						<Col md={6} className="my-container column-dir center" style={styles.carouselInfoContainer}>
-							<h1>
-								<a href="https://www.greenbiz.com/article/how-demand-food-delivery-apps-could-encourage-low-carbon-food">
-									Climate Change Solutions Generator
-								</a>
-							</h1>
-							<p style={styles.carouselInfo}>
-								After participating in Yale Tsai CITY's Climate Change Solutions Generator, my team and
-								I were selected to have our article on food delivery app carbon ratings published by
-								Greenbiz.
-							</p>
+					<CarouselItem
+						title="Climate Change Solutions Generator"
+						url="https://www.greenbiz.com/article/how-demand-food-delivery-apps-could-encourage-low-carbon-food"
+						description="After participating in Yale Tsai CITY's Climate Change Solutions Generator, my team and
+						I were selected to have our article on food delivery app carbon ratings published by
+						Greenbiz."
+						tags={
 							<div className="my-container space">
 								<Tag name="Sustainability" color={Colors.sustainabilityTag} />
 								<Tag name="Research" color={Colors.researchTag} />
 							</div>
-						</Col>
-						<Col md={6} style={{ paddingLeft: '0px' }}>
-							<img src={ccsg} className="full-img" />
-						</Col>
-					</Row>
+						}
+						img={ccsg}
+					/>
 				</Carousel.Item>
 				<Carousel.Item>
-					<Row>
-						<Col md={6} className="my-container column-dir center" style={styles.carouselInfoContainer}>
-							<h1>
-								<a href="https://github.com/annazhang2002/FirstCombatSoundSimulator">
-									First Combat Sound Simulator
-								</a>
-							</h1>
-							<p style={styles.carouselInfo}>
-								During my four week at COSMOS UCI, my team and I developed a military training iOS app
-								using 3D sound spatialization to help new recruits train in a virtual sound environment,
-								adjusted for head position with the MetaWearC sensors.
-							</p>
+					<CarouselItem
+						title="First Combat Sound Simulator"
+						url="https://github.com/annazhang2002/FirstCombatSoundSimulator"
+						description="During my four week at COSMOS UCI, my team and I developed a military training iOS app
+						using 3D sound spatialization to help new recruits train in a virtual sound environment,
+						adjusted for head position with the MetaWearC sensors."
+						tags={
 							<div className="my-container space">
 								<Tag name="App Developement" color={Colors.appTag} />
 								<Tag name="Research" color={Colors.researchTag} />
 							</div>
-						</Col>
-						<Col md={6} style={{ paddingLeft: '0px' }}>
-							<img src={fcss} className="full-img" />
-						</Col>
-					</Row>
+						}
+						img={fcss}
+					/>
 				</Carousel.Item>
 			</Carousel>
 		</div>
@@ -129,7 +99,7 @@ const Homepage = () => (
 		{/************* ALL PROJECTS *********************/}
 		<div className="section">
 			{/************* CODING PROJECTS *********************/}
-			<h1>Coding</h1>
+			<h1 className="section-title">Coding</h1>
 			<Row style={styles.projectRow}>
 				<Col lg={4}>
 					<ProjectCard
@@ -192,7 +162,7 @@ const Homepage = () => (
 			</Row>
 		</div>
 		<div className="section">
-			<h1>Community</h1>
+			<h1 className="section-title">Community</h1>
 			<Row style={styles.projectRow}>
 				<Col lg={4}>
 					<ProjectCard
@@ -264,8 +234,8 @@ const Homepage = () => (
 			</Row>
 		</div>
 		<div className="section">
-			<h1>Sustainability</h1>
-			<Row>
+			<h1 className="section-title">Sustainability</h1>
+			<Row style={styles.projectRow}>
 				<Col lg={4}>
 					<ProjectCard
 						title="Climate Change Solutions Generator"
@@ -314,38 +284,6 @@ const Homepage = () => (
 );
 
 const styles = {
-	heroContainer: {
-		width: '100%',
-		padding: '13%',
-		// paddingLeft: '200px',
-		// paddingRight: '200px',
-		height: '100vh'
-	},
-	heroText: {
-		width: '35%',
-		color: Colors.white,
-		textShadow: '1px 1px 20px #272635'
-	},
-	bio: {
-		fontWeight: '500',
-		fontSize: '24px',
-		lineHeight: '33px'
-	},
-	heroAnna: {
-		fontSize: '96px',
-		lineHeight: '117px',
-		color: Colors.white,
-		textShadow: '5px 5px 10px #423F4E'
-	},
-	carouselInfoContainer: {
-		padding: '50px',
-		backgroundColor: Colors.lightest
-	},
-	carouselInfo: {
-		textAlign: 'justify',
-		margin: '20px',
-		padding: '20px'
-	},
 	projectRow: {
 		marginBottom: '50px'
 	}

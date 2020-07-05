@@ -43,11 +43,19 @@ class Header extends Component {
 	}
 	//
 
+	onClick() {
+		window.scrollTo(0, 0);
+	}
+
+	onClickPortfolio() {
+		window.scrollTo(0, 650);
+	}
+
 	render() {
 		return (
 			<div className="header" style={this.headerColor()}>
 				<Navbar collapseOnSelect expand="lg" bg="" variant="dark">
-					<Link to="/" className="my-container logo" onClick={() => window.scrollTo(0, 0)}>
+					<Link to="/" className="my-container logo" onClick={this.onClick}>
 						{/* <h3 style={styles.nameLink} className="nav-link">
 							Anna Zhang
 						</h3> */}
@@ -62,20 +70,10 @@ class Header extends Component {
 					<Navbar.Collapse id="responsive-navbar-nav">
 						<Nav className="mr-auto" />
 						<Nav>
-							<Link
-								to="/"
-								style={styles.navLink}
-								className="nav-link"
-								onClick={() => window.scrollTo(0, 650)}
-							>
+							<Link to="/" style={styles.navLink} className="nav-link" onClick={this.onClickPortfolio}>
 								Portfolio
 							</Link>
-							<Link
-								to="/about"
-								style={styles.navLink}
-								className="nav-link"
-								onClick={() => window.scrollTo(0, 0)}
-							>
+							<Link to="/about" style={styles.navLink} className="nav-link" onClick={this.onClick}>
 								About
 							</Link>
 							<a
