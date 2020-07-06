@@ -201,14 +201,14 @@ const funpics = [
 const Homepage = () => (
 	<div className="center-text">
 		<Header solid={true} />
-		<div className="section" style={styles.topSection}>
+		<div className="section after-heading">
 			<Row>
 				<Col md={6}>
-					<img src={headshot} className="full-img" />
+					<img src={headshot} className=" headshot" />
 				</Col>
-				<Col md={6} className="my-container center column-dir" style={styles.bio}>
-					<h1 style={styles.helloText}>Hi, I'm Anna!</h1>
-					<p>
+				<Col md={6} className="my-container center column-dir bio-section">
+					<h1 className="hello-text">Hi, I'm Anna!</h1>
+					<p className="about-bio">
 						As an avid computer science student, I aim to highlight the importance of engineering as a means
 						of promoting social good. In addition to software engineering, I am also incredibly passionate
 						about environmental conservation, AI + linguistics, and psychology, so I want to combine these
@@ -248,20 +248,14 @@ const Homepage = () => (
 );
 
 const styles = {
-	topSection: {
-		marginTop: '50px'
-	},
 	helloText: {
 		fontSize: '90px'
-	},
-	bio: {
-		paddingLeft: '50px',
-		paddingRight: '50px'
 	},
 	gallery: {
 		display: 'block',
 		minHeight: '1px',
-		overflow: 'auto'
+		overflow: 'auto',
+		textAlign: 'center'
 	},
 	imgCaption: {
 		backgroundColor: 'rgba(0, 0, 0, 0.8)',
