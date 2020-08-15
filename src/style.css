@@ -259,7 +259,7 @@ li.nav {
 
 	/*************** HERO IMAGE *************/
 	.hero-img {
-		min-height: auto;
+		background-size: cover;
 		background-position: center;
 	}
 	.heroContainer {

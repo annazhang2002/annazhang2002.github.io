@@ -6,12 +6,13 @@ export default {
 	lightBlue: '#C5E0FF',
 	lightGreen: '#ccffcc',
 	lightPurple: '#ddccff',
-	webTag: '#b3ccff', // perinwinkle
-	appTag: '#ffccf2', // pink
-	gameTag: '#fff0b3', // yellow
-	frontendTag: '#ccffcc', // green
-	sustainabilityTag: '#ecffb3', // neon green
-	researchTag: '#ffd1b3', // orange
+	webTag: '#99ddff', // blue
+	designTag: '#ffccf2', // pink
+	appTag: '#fff0b3', // yellow
+	researchTag: '#ffbb99', // orange
+	fullstackTag: '#99ffdd', // cyan
+	sustainabilityTag: '#ccff99', // neon green
+	gameTag: '#ccccff', // periwinkle
 	educationTag: '#e6ccb3', // brown
 	volunteerTag: '#b3ffff', // aqua
 	eventsTag: '#ff8080', // red

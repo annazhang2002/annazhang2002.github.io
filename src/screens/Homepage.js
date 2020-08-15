@@ -16,6 +16,7 @@ import dottech from '../images/dottech.png';
 
 /**** FEATURE PROJECT IMAGES ******/
 /* dimensions are 118* 1254 */
+import ecoeat from '../images/projects/ecoeat.png';
 import pills2me from '../images/projects/pills2me-web.png';
 import ccsg from '../images/projects/ccsg-greenbiz.png';
 import fcss from '../images/projects/fcss-app.png';
@@ -23,9 +24,14 @@ import fcss from '../images/projects/fcss-app.png';
 /***** CARD IMAGES *********/
 /* perfect squares please! */
 import pills2meGif from '../images/projects/pills2me-gif.gif';
+import civicGif from '../images/projects/civic.gif';
+import ecoeatGif from '../images/projects/ecoeat.gif';
 import fcssMe from '../images/projects/fcss.jpg';
 import tictactoe from '../images/projects/tictactoe.png';
 import rainforest from '../images/projects/rainforest.gif';
+import flixster from '../images/projects/flixster.gif';
+import parstagram from '../images/projects/parstagram.gif';
+import tweet from '../images/projects/tweet.gif';
 import codehaven from '../images/projects/codehaven.png';
 import wics from '../images/projects/wics.png';
 import php from '../images/projects/php.png';
@@ -46,6 +52,23 @@ const Homepage = () => (
 			<Carousel className="shadow">
 				<Carousel.Item>
 					<CarouselItem
+						title="EcoEat App"
+						url="https://github.com/CodeGreen-Dandilyonn/EcoEat/"
+						description="With my SEEDS Team, I created the EcoEat app which provides users with recipes based
+						 on their on-hand ingredients in order to empower them to reduce their food waste and make sustainable
+						 choices."
+						tags={
+							<div className="my-container space">
+								<Tag name="App Dev" color={Colors.appTag} />
+								<Tag name="Design" color={Colors.designTag} />
+								<Tag name="FullStack" color={Colors.fullstackTag} />
+							</div>
+						}
+						img={ecoeat}
+					/>
+				</Carousel.Item>
+				<Carousel.Item>
+					<CarouselItem
 						title="Pills2Me Web Development"
 						url="https://www.pills2me.com/"
 						description="As the software engineering intern, I developed a ReactJS website for Pills2Me, a
@@ -54,7 +77,7 @@ const Homepage = () => (
 						tags={
 							<div className="my-container space">
 								<Tag name="Web Dev" color={Colors.webTag} />
-								<Tag name="Frontend" color={Colors.frontendTag} />
+								<Tag name="Design" color={Colors.designTag} />
 							</div>
 						}
 						img={pills2me}
@@ -103,6 +126,37 @@ const Homepage = () => (
 			<Row style={styles.projectRow}>
 				<Col lg={4}>
 					<ProjectCard
+						title="EcoEat App"
+						img={ecoeatGif}
+						url="https://github.com/CodeGreen-Dandilyonn/EcoEat/"
+						text="A react native mobile app that encourages sustainable eating and food waste 
+						reduction by allowing users to get recipe recommendations based on pantry items"
+						tags={
+							<div className="my-container space">
+								<Tag name="App Dev" color={Colors.appTag} />
+								<Tag name="Design" color={Colors.designTag} />
+								<Tag name="FullStack" color={Colors.fullstackTag} />
+							</div>
+						}
+					/>
+				</Col>
+				<Col lg={4}>
+					<ProjectCard
+						title="Civic Citizen App"
+						img={civicGif}
+						url="https://github.com/annazhang2002/CivicCitizen"
+						text="A civic engagement Android app that aims to increase voter turnout and help provide users with the information they need to make their voice heard in politics."
+						tags={
+							<div className="my-container space">
+								<Tag name="App Dev" color={Colors.appTag} />
+								<Tag name="Design" color={Colors.designTag} />
+								<Tag name="FullStack" color={Colors.fullstackTag} />
+							</div>
+						}
+					/>
+				</Col>
+				<Col lg={4}>
+					<ProjectCard
 						title="Pills2Me Website"
 						img={pills2meGif}
 						url="https://github.com/pills2me/pills2me.github.io"
@@ -111,21 +165,81 @@ const Homepage = () => (
 						tags={
 							<div className="my-container space">
 								<Tag name="Web Dev" color={Colors.webTag} />
-								<Tag name="Frontend" color={Colors.frontendTag} />
+								<Tag name="Design" color={Colors.designTag} />
+							</div>
+						}
+					/>
+				</Col>
+				
+				
+			</Row>
+			<Row>
+			<Col lg={4}>
+					<ProjectCard
+						title="First Combat Sound Simulator"
+						img={fcssMe}
+						url="https://github.com/annazhang2002/FirstCombatSoundSimulator"
+						text="A military training iOS app using a 3D sound environment and MetaWearC sensors that adjusts sound environment based on head positioning."
+						tags={
+							<div className="my-container space">
+								<Tag name="App Dev" color={Colors.appTag} />
+								<Tag name="Research" color={Colors.researchTag} />
 							</div>
 						}
 					/>
 				</Col>
 				<Col lg={4}>
 					<ProjectCard
-						title="First Combat Sound Simulator"
-						img={fcssMe}
-						url="https://github.com/annazhang2002/FirstCombatSoundSimulator"
-						text="A military training iOS app using a 3D sound environment and MetaWearC sensors"
+						title="Rainforest Rescue"
+						img={rainforest}
+						url="https://github.com/annazhang2002/RainforestRescue"
+						text="A game designed to educate people about the threats tropical rainforests are facing"
+						tags={
+							<div className="my-container space">
+								<Tag name="Game" color={Colors.gameTag} />
+								<Tag name="Sustainability" color={Colors.sustainabilityTag} />
+							</div>
+						}
+					/>
+				</Col>
+				<Col lg={4}>
+					<ProjectCard
+						title="Flixster"
+						img={flixster}
+						url="https://github.com/annazhang2002/Flixster"
+						text="A android app that allows users to view upcoming and popular movies along with their description, trailers, ratings, and genres"
 						tags={
 							<div className="my-container space">
 								<Tag name="App Dev" color={Colors.appTag} />
-								<Tag name="Research" color={Colors.researchTag} />
+							</div>
+						}
+					/>
+				</Col>
+			</Row>
+			<Row>
+			<Col lg={4}>
+					<ProjectCard
+						title="Parstagram"
+						img={parstagram}
+						url="https://github.com/annazhang2002/Parstagram"
+						text="A social media networking app that emulates Instagram, but it uses a Parse backend database to store user information."
+						tags={
+							<div className="my-container space">
+								<Tag name="App Dev" color={Colors.appTag} />
+								<Tag name="Fullstack" color={Colors.fullstackTag} />
+							</div>
+						}
+					/>
+				</Col>
+				<Col lg={4}>
+					<ProjectCard
+						title="Simple Tweet"
+						img={tweet}
+						url="https://github.com/annazhang2002/SimpleTweet"
+						text="An mock twitter app that utilized the Twitter Developer API to retrieve actual tweets from the current user's timeline"
+						tags={
+							<div className="my-container space">
+								<Tag name="App Dev" color={Colors.appTag} />
 							</div>
 						}
 					/>
@@ -139,22 +253,6 @@ const Homepage = () => (
 						tags={
 							<div className="my-container space">
 								<Tag name="App Dev" color={Colors.appTag} />
-							</div>
-						}
-					/>
-				</Col>
-			</Row>
-			<Row>
-				<Col lg={4}>
-					<ProjectCard
-						title="Rainforest Rescue"
-						img={rainforest}
-						url="https://github.com/annazhang2002/RainforestRescue"
-						text="A game designed to educate people about the threats tropical rainforests are facing"
-						tags={
-							<div className="my-container space">
-								<Tag name="Game Dev" color={Colors.gameTag} />
-								<Tag name="Sustainability" color={Colors.sustainabilityTag} />
 							</div>
 						}
 					/>
