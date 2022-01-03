@@ -78,6 +78,4 @@ class Hero extends Component {
 	}
 }
 
-const styles = {};
-
 export default Hero;

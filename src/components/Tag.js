@@ -1,7 +1,5 @@
-import React, { Component } from 'react';
+import React from 'react';
 import '../style.css';
-
-import Colors from '../colors';
 
 const Tag = (props) => {
 	return (

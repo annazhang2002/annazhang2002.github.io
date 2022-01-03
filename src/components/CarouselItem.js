@@ -1,9 +1,7 @@
-import React, { Component } from 'react';
-import { Carousel, Row, Col } from 'react-bootstrap';
+import React from 'react';
+import { Row, Col } from 'react-bootstrap';
 import '../style.css';
 import Colors from '../colors';
-
-import Socials from '../components/Socials';
 
 const CarouselItem = (props) => (
 	<Row>
@@ -19,7 +17,7 @@ const CarouselItem = (props) => (
 			{props.tags}
 		</Col>
 		<Col md={6} style={{ paddingLeft: '0px' }}>
-			<img src={props.img} className="full-img" />
+			<img src={props.img} className="full-img" alt={props.alt} />
 		</Col>
 	</Row>
 );

@@ -81,6 +81,7 @@ class Header extends Component {
 								target="_blank"
 								style={(styles.navLink, { color: Colors.lightest })}
 								className="nav-link"
+								rel="noopener noreferrer"
 							>
 								Resume
 							</a>
@@ -89,6 +90,7 @@ class Header extends Component {
 								target="_blank"
 								style={(styles.navLink, { color: Colors.lightest })}
 								className="nav-link"
+								rel="noopener noreferrer"
 							>
 								Github
 							</a>
@@ -97,6 +99,7 @@ class Header extends Component {
 								target="_blank"
 								style={(styles.navLink, { color: Colors.lightest })}
 								className="nav-link"
+								rel="noopener noreferrer"
 							>
 								LinkedIn
 							</a>

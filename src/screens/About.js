@@ -1,17 +1,12 @@
 import React from 'react';
-import { Carousel, Row, Col } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 import Gallery from 'react-grid-gallery';
-import { Link } from 'react-router-dom';
 import '../style.css';
 import Colors from '../colors';
 
 import Header from '../components/Header';
 import Socials from '../components/Socials';
-import Tag from '../components/Tag';
 import Footer from '../components/Footer';
-import Job from '../components/Job';
-import Resume from '../images/resume.pdf';
-
 import headshot from '../images/headshot.png';
 
 /************** HOBBIES IMAGES  *******************/
@@ -204,7 +199,7 @@ const Homepage = () => (
 		<div className="section after-heading">
 			<Row>
 				<Col md={6}>
-					<img src={headshot} className=" headshot" />
+					<img src={headshot} className=" headshot" alt="headshot" />
 				</Col>
 				<Col md={6} className="my-container center column-dir bio-section">
 					<h1 className="hello-text">Hi, I'm Anna!</h1>

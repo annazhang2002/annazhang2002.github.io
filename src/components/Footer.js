@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import '../style.css';
 
 import Colors from '../colors';
@@ -19,7 +19,7 @@ const Footer = () => {
 				<Socials color={Colors.white} />
 			</div>
 			<p style={styles.bottomText}>
-				Programmed in ReactJS and with the support of <img src={dottech} style={styles.dottech} />
+				Programmed in ReactJS and with the support of <img src={dottech} style={styles.dottech} alt="Dottech Logo" />
 			</p>
 		</div>
 	);

@@ -1,7 +1,5 @@
-import React, { Component } from 'react';
+import React from 'react';
 import '../style.css';
-
-import Colors from '../colors';
 
 const Job = (props) => {
 	return (
@@ -16,7 +14,5 @@ const Job = (props) => {
 		</div>
 	);
 };
-
-const styles = {};
 
 export default Job;

@@ -1,18 +1,14 @@
 import React from 'react';
 import { Carousel, Row, Col } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
 import '../style.css';
 import Colors from '../colors';
 
 import Header from '../components/Header';
-import BackgroundVideo from '../components/BackgroundVideo';
 import Tag from '../components/Tag';
 import Footer from '../components/Footer';
 import ProjectCard from '../components/ProjectCard';
 import Hero from '../components/Hero';
 import CarouselItem from '../components/CarouselItem';
-
-import dottech from '../images/dottech.png';
 
 /**** FEATURE PROJECT IMAGES ******/
 /* dimensions are 118* 1254 */
@@ -65,6 +61,7 @@ const Homepage = () => (
 							</div>
 						}
 						img={ecoeat}
+						alt="EcoEat Demo"
 					/>
 				</Carousel.Item>
 				<Carousel.Item>
@@ -81,6 +78,7 @@ const Homepage = () => (
 							</div>
 						}
 						img={pills2me}
+						alt="Pill2Me Website"
 					/>
 				</Carousel.Item>
 
@@ -98,6 +96,7 @@ const Homepage = () => (
 							</div>
 						}
 						img={ccsg}
+						alt="Article Preview"
 					/>
 				</Carousel.Item>
 				<Carousel.Item>
@@ -114,6 +113,7 @@ const Homepage = () => (
 							</div>
 						}
 						img={fcss}
+						alt="App Demo"
 					/>
 				</Carousel.Item>
 			</Carousel>

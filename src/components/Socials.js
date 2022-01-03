@@ -1,7 +1,6 @@
-import React, { Component } from 'react';
+/* eslint-disable jsx-a11y/anchor-has-content */
+import React from 'react';
 import '../style.css';
-
-import Colors from '../colors';
 
 const Socials = (props) => {
 	const styles = {
@@ -22,12 +21,13 @@ const Socials = (props) => {
 					email
 				</i>
 			</a>
-			<a href="https://www.linkedin.com/in/annazhang2002/" style={styles.icon} class="fa fa-linkedin" />
-			<a href="https://github.com/annazhang2002" style={styles.icon} class="fa fa-github" />
+			<a href="https://www.linkedin.com/in/annazhang2002/" style={styles.icon} class="fa fa-linkedin" alt="Linkedin" />
+			<a href="https://github.com/annazhang2002" style={styles.icon} class="fa fa-github" alt="Github" />
 			<a
 				href="https://www.facebook.com/profile.php?id=100011715346775"
 				style={styles.icon}
 				class="fa fa-facebook"
+				alt="Facebook"
 			/>
 		</div>
 	);

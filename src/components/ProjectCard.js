@@ -1,14 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 import '../style.css';
-
-import Colors from '../colors';
 
 const ProjectCard = (props) => {
 	return (
-		<a href={props.url} target="_blank">
+		<a href={props.url} target="_blank" rel="noopener noreferrer">
 			<div className="my-container column-dir between cardContainer">
 				<div className="my-container center">
-					<img src={props.img} className="full-img cardImg" />
+					<img src={props.img} className="full-img cardImg" alt={props.imageAlt} />
 				</div>
 
 				<h2>{props.title}</h2>
