@@ -2,7 +2,7 @@ import React from 'react';
 import { Row, Col } from 'react-bootstrap';
 import '../style.css';
 import Colors from '../values/colors';
-import TagDiv from '../molecules/TagDiv';
+import TagDiv from '../atoms/TagDiv';
 
 const CarouselItem = (props) => (
 	<Row>

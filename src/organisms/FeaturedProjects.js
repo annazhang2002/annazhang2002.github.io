@@ -2,7 +2,7 @@ import React from 'react';
 import '../style.css';
 
 import { Carousel } from 'react-bootstrap';
-import CarouselItem from '../atoms/CarouselItem';
+import CarouselItem from '../molecules/CarouselItem';
 import Tags from '../values/tags';
 
 /* dimensions are 118* 1254 */

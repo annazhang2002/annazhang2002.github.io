@@ -1,7 +1,7 @@
 import React from 'react';
 import '../style.css';
 
-import TagDiv from '../molecules/TagDiv';
+import TagDiv from '../atoms/TagDiv';
 
 const ProjectCard = (props) => {
 	return (
