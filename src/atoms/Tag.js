@@ -20,7 +20,8 @@ const styles = {
 		paddingLeft: '20px',
 		paddingRight: '20px',
 		marginBottom: '0px',
-		fontSize: '10px'
+		fontSize: '10px',
+		color: 'black',
 	}
 };
 
