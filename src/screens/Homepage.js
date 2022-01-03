@@ -3,12 +3,12 @@ import { Carousel, Row, Col } from 'react-bootstrap';
 import '../style.css';
 import Colors from '../colors';
 
-import Header from '../components/Header';
-import Tag from '../components/Tag';
-import Footer from '../components/Footer';
-import ProjectCard from '../components/ProjectCard';
-import Hero from '../components/Hero';
-import CarouselItem from '../components/CarouselItem';
+import Header from '../molecules/Header';
+import Tag from '../atoms/Tag';
+import Footer from '../molecules/Footer';
+import ProjectCard from '../atoms/ProjectCard';
+import Hero from '../molecules/Hero';
+import CarouselItem from '../atoms/CarouselItem';
 
 /**** FEATURE PROJECT IMAGES ******/
 /* dimensions are 118* 1254 */

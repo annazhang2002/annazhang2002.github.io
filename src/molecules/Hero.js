@@ -4,7 +4,7 @@ import Colors from '../colors';
 
 import ScrollAnimation from 'react-animate-on-scroll'
 
-import Socials from '../components/Socials';
+import Socials from '../atoms/Socials';
 
 class Hero extends Component {
 	constructor(props) {

@@ -5,9 +5,9 @@ import '../style.css';
 import Colors from '../colors';
 import ScrollAnimation from 'react-animate-on-scroll'
 
-import Header from '../components/Header';
-import Socials from '../components/Socials';
-import Footer from '../components/Footer';
+import Header from '../molecules/Header';
+import Socials from '../atoms/Socials';
+import Footer from '../molecules/Footer';
 import headshot from '../images/headshot.png';
 
 /************** HOBBIES IMAGES  *******************/

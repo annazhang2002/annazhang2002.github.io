@@ -5,7 +5,7 @@ import Colors from '../colors';
 
 import dottech from '../images/dottech.png';
 
-import Socials from './Socials';
+import Socials from '../atoms/Socials';
 
 const Footer = () => {
 	return (
