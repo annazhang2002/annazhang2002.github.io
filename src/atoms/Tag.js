@@ -2,12 +2,14 @@ import React from 'react';
 import '../style.css';
 
 const Tag = (props) => {
+	const color = props.tag.color;
+	const name = props.tag.name;
 	return (
 		<div
 			className="my-container center"
-			style={{ borderRadius: '20px', backgroundColor: props.color, margin: '5px' }}
+			style={{ borderRadius: '20px', backgroundColor: color, margin: '5px' }}
 		>
-			<p style={styles.tagText}>{props.name}</p>
+			<p style={styles.tagText}>{name}</p>
 		</div>
 	);
 };

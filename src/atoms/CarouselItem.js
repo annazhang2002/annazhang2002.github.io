@@ -1,7 +1,8 @@
 import React from 'react';
 import { Row, Col } from 'react-bootstrap';
 import '../style.css';
-import Colors from '../colors';
+import Colors from '../values/colors';
+import TagDiv from '../molecules/TagDiv';
 
 const CarouselItem = (props) => (
 	<Row>
@@ -14,7 +15,7 @@ const CarouselItem = (props) => (
 				<a href={props.url}>{props.title}</a>
 			</h1>
 			<p className="carouselInfo">{props.description}</p>
-			{props.tags}
+			<TagDiv tags={props.tags} />
 		</Col>
 		<Col md={6} style={{ paddingLeft: '0px' }}>
 			<img src={props.img} className="full-img" alt={props.alt} />

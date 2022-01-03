@@ -2,7 +2,7 @@ import React from 'react';
 import { Row, Col } from 'react-bootstrap';
 import Gallery from 'react-grid-gallery';
 import '../style.css';
-import Colors from '../colors';
+import Colors from '../values/colors';
 import ScrollAnimation from 'react-animate-on-scroll'
 
 import Header from '../molecules/Header';

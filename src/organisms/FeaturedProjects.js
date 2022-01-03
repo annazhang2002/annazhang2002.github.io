@@ -3,8 +3,7 @@ import '../style.css';
 
 import { Carousel } from 'react-bootstrap';
 import CarouselItem from '../atoms/CarouselItem';
-import Tag from '../atoms/Tag';
-import Colors from '../colors';
+import Tags from '../values/tags';
 
 /* dimensions are 118* 1254 */
 import ecoeat from '../images/projects/ecoeat.png';
@@ -19,11 +18,7 @@ const projects = [
         description: `With my SEEDS Team, I created the EcoEat app which provides users with recipes based
         on their on-hand ingredients in order to empower them to reduce their food waste and make sustainable
         choices.`,
-        tags: (<div className="my-container space">
-            <Tag name="App Dev" color={Colors.appTag} />
-            <Tag name="Design" color={Colors.designTag} />
-            <Tag name="FullStack" color={Colors.fullstackTag} />
-        </div>),
+        tags: [Tags.appDev, Tags.design],
         img: ecoeat,
         alt: "EcoEat Demo",
     },
@@ -33,10 +28,7 @@ const projects = [
         description: `As the software engineering intern, I developed a ReactJS website for Pills2Me, a
         startup that connects elderly patients with volunteer drivers for free same-day
         medication delivery`,
-        tags: (<div className="my-container space">
-            <Tag name="Web Dev" color={Colors.webTag} />
-            <Tag name="Design" color={Colors.designTag} />
-        </div>),
+        tags: [Tags.webDev, Tags.design],
         img: pills2me,
         alt: "Pill2Me Website",
     },

@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import logoWhite from '../images/logo-white.png';
 import Resume from '../images/resume.pdf';
 
-import Colors from '../colors';
+import Colors from '../values/colors';
 const color = Colors.darkest;
 
 class Header extends Component {

@@ -1,6 +1,8 @@
 import React from 'react';
 import '../style.css';
 
+import TagDiv from '../molecules/TagDiv';
+
 const ProjectCard = (props) => {
 	return (
 		<a href={props.url} target="_blank" rel="noopener noreferrer">
@@ -11,7 +13,7 @@ const ProjectCard = (props) => {
 
 				<h2>{props.title}</h2>
 				<p className="cardInfo">{props.text}</p>
-				{props.tags}
+				<TagDiv tags={props.tags} />
 			</div>
 		</a>
 	);

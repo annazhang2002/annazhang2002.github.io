@@ -1,7 +1,7 @@
 import React from 'react';
 import '../style.css';
 
-import Colors from '../colors';
+import Colors from '../values/colors';
 
 import dottech from '../images/dottech.png';
 

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../style.css';
-import Colors from '../colors';
+import Colors from '../values/colors';
 
 import ScrollAnimation from 'react-animate-on-scroll'
 
