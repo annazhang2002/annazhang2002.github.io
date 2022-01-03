@@ -5,7 +5,7 @@ import '../style.css';
 import Colors from '../colors';
 
 import Header from '../components/Header';
-
+import BackgroundVideo from '../components/BackgroundVideo';
 import Tag from '../components/Tag';
 import Footer from '../components/Footer';
 import ProjectCard from '../components/ProjectCard';

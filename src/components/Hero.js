@@ -34,6 +34,9 @@ class Hero extends Component {
 		if (this.state.windowWidth > 768) {
 			return (
 				<div className="hero-img">
+					<video loop autoPlay muted id="bg-video">
+						<source src={require('../images/bg_video.mp4')} type="video/mp4" />
+					</video>
 					<div className="my-container between heroContainer">
 						<div className="my-container column-dir ">
 							<h1 className="heroAnna">
@@ -52,7 +55,10 @@ class Hero extends Component {
 			);
 		} else {
 			return (
-				<div className="hero-img" style={{ height: this.state.windowHeight }}>
+				<div className="hero-img">
+					<video loop autoPlay muted id="bg-video">
+						<source src={require('../images/bg_video.mp4')} type="video/mp4" />
+					</video>
 					<div
 						className="my-container center heroContainer column-dir"
 						style={{ height: this.state.windowHeight }}

@@ -116,9 +116,19 @@ a:hover {
 
 /* linear-gradient(rgba(109, 109, 109, 0.3), rgba(109, 109, 109, 0.3)),  */
 /***************** HOME PAGE ****************/
+#bg-video {
+	object-fit: cover;
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
 .hero-img {
 	width: 100%;
-	background-image: linear-gradient(rgba(109, 109, 109, 0.3), rgba(109, 109, 109, 0.3)), url("images/heroimage.jpg");
+	background-color: rgba(68, 57, 94, 0.3);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	min-height: 100vh;
