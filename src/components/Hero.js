@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import '../style.css';
 import Colors from '../colors';
 
+import ScrollAnimation from 'react-animate-on-scroll'
+
 import Socials from '../components/Socials';
 
 class Hero extends Component {
@@ -39,16 +41,20 @@ class Hero extends Component {
 					</video>
 					<div className="my-container between heroContainer">
 						<div className="my-container column-dir ">
-							<h1 className="heroAnna">
-								Anna<br /> Zhang
+							<ScrollAnimation animateIn='slideInLeft'>
+								<h1 className="heroAnna">
+									Anna<br /> Zhang
 							</h1>
+							</ScrollAnimation>
 						</div>
 						<div className="my-container column-dir heroText">
-							<p className="bio">
-								An undergrad CS student passionate about computer science, sustainability, and
-								psychology.
+							<ScrollAnimation animateIn='slideInRight'>
+								<p className="bio">
+									An undergrad CS student passionate about computer science, sustainability, and
+									psychology.
 							</p>
-							<Socials color={Colors.white} />
+								<Socials color={Colors.white} />
+							</ScrollAnimation>
 						</div>
 					</div>
 				</div>

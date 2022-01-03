@@ -3,6 +3,7 @@ import { Row, Col } from 'react-bootstrap';
 import Gallery from 'react-grid-gallery';
 import '../style.css';
 import Colors from '../colors';
+import ScrollAnimation from 'react-animate-on-scroll'
 
 import Header from '../components/Header';
 import Socials from '../components/Socials';
@@ -197,22 +198,24 @@ const Homepage = () => (
 	<div className="center-text">
 		<Header solid={true} />
 		<div className="section after-heading">
-			<Row>
-				<Col md={6}>
-					<img src={headshot} className=" headshot" alt="headshot" />
-				</Col>
-				<Col md={6} className="my-container center column-dir bio-section">
-					<h1 className="hello-text">Hi, I'm Anna!</h1>
-					<p className="about-bio">
-						As an avid computer science student, I aim to highlight the importance of engineering as a means
-						of promoting social good. In addition to software engineering, I am also incredibly passionate
-						about environmental conservation, AI + linguistics, and psychology, so I want to combine these
-						passions in my future careers. I believe that computer science has the power to change the world
-						for the better, and I hope I can create and innovate in ways that promote social good.
+			<ScrollAnimation animateIn="fadeIn">
+				<Row>
+					<Col md={6}>
+						<img src={headshot} className=" headshot" alt="headshot" />
+					</Col>
+					<Col md={6} className="my-container center column-dir bio-section">
+						<h1 className="hello-text">Hi, I'm Anna!</h1>
+						<p className="about-bio">
+							As an avid computer science student, I aim to highlight the importance of engineering as a means
+							of promoting social good. In addition to software engineering, I am also incredibly passionate
+							about environmental conservation, AI + linguistics, and psychology, so I want to combine these
+							passions in my future careers. I believe that computer science has the power to change the world
+							for the better, and I hope I can create and innovate in ways that promote social good.
 					</p>
-					<Socials color={Colors.accent} />
-				</Col>
-			</Row>
+						<Socials color={Colors.accent} />
+					</Col>
+				</Row>
+			</ScrollAnimation>
 		</div>
 		{/*************** HOBBY IMAGE GALLERY ****************/}
 		<div className="section" style={styles.gallery}>
