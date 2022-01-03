@@ -1,5 +1,5 @@
 import React from 'react';
-import { Carousel, Row, Col } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 import '../style.css';
 import Colors from '../colors';
 
@@ -8,14 +8,7 @@ import Tag from '../atoms/Tag';
 import Footer from '../molecules/Footer';
 import ProjectCard from '../atoms/ProjectCard';
 import Hero from '../molecules/Hero';
-import CarouselItem from '../atoms/CarouselItem';
-
-/**** FEATURE PROJECT IMAGES ******/
-/* dimensions are 118* 1254 */
-import ecoeat from '../images/projects/ecoeat.png';
-import pills2me from '../images/projects/pills2me-web.png';
-import ccsg from '../images/projects/ccsg-greenbiz.png';
-import fcss from '../images/projects/fcss-app.png';
+import FeaturedProjects from '../organisms/FeaturedProjects';
 
 /***** CARD IMAGES *********/
 /* perfect squares please! */
@@ -43,81 +36,7 @@ const Homepage = () => (
 		{/************* HERO IMAGE *********************/}
 		<Hero />
 		{/************* FEATURED PROJECTS *********************/}
-		<div className="section" id="portfolio">
-			<h3 style={{ textAlign: 'left', marginBottom: '30px' }}>Featured Projects</h3>
-			<Carousel className="shadow">
-				<Carousel.Item>
-					<CarouselItem
-						title="EcoEat App"
-						url="https://github.com/CodeGreen-Dandilyonn/EcoEat/"
-						description="With my SEEDS Team, I created the EcoEat app which provides users with recipes based
-						 on their on-hand ingredients in order to empower them to reduce their food waste and make sustainable
-						 choices."
-						tags={
-							<div className="my-container space">
-								<Tag name="App Dev" color={Colors.appTag} />
-								<Tag name="Design" color={Colors.designTag} />
-								<Tag name="FullStack" color={Colors.fullstackTag} />
-							</div>
-						}
-						img={ecoeat}
-						alt="EcoEat Demo"
-					/>
-				</Carousel.Item>
-				<Carousel.Item>
-					<CarouselItem
-						title="Pills2Me Web Development"
-						url="https://www.pills2me.com/"
-						description="As the software engineering intern, I developed a ReactJS website for Pills2Me, a
-					startup that connects elderly patients with volunteer drivers for free same-day
-					medication delivery"
-						tags={
-							<div className="my-container space">
-								<Tag name="Web Dev" color={Colors.webTag} />
-								<Tag name="Design" color={Colors.designTag} />
-							</div>
-						}
-						img={pills2me}
-						alt="Pill2Me Website"
-					/>
-				</Carousel.Item>
-
-				<Carousel.Item>
-					<CarouselItem
-						title="Climate Change Solutions Generator"
-						url="https://www.greenbiz.com/article/how-demand-food-delivery-apps-could-encourage-low-carbon-food"
-						description="After participating in Yale Tsai CITY's Climate Change Solutions Generator, my team and
-						I were selected to have our article on food delivery app carbon ratings published by
-						Greenbiz."
-						tags={
-							<div className="my-container space">
-								<Tag name="Sustainability" color={Colors.sustainabilityTag} />
-								<Tag name="Research" color={Colors.researchTag} />
-							</div>
-						}
-						img={ccsg}
-						alt="Article Preview"
-					/>
-				</Carousel.Item>
-				<Carousel.Item>
-					<CarouselItem
-						title="First Combat Sound Simulator"
-						url="https://github.com/annazhang2002/FirstCombatSoundSimulator"
-						description="During my four week at COSMOS UCI, my team and I developed a military training iOS app
-						using 3D sound spatialization to help new recruits train in a virtual sound environment,
-						adjusted for head position with the MetaWearC sensors."
-						tags={
-							<div className="my-container space">
-								<Tag name="App Developement" color={Colors.appTag} />
-								<Tag name="Research" color={Colors.researchTag} />
-							</div>
-						}
-						img={fcss}
-						alt="App Demo"
-					/>
-				</Carousel.Item>
-			</Carousel>
-		</div>
+		<FeaturedProjects />
 
 		{/************* ALL PROJECTS *********************/}
 		<div className="section">
