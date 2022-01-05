@@ -25,16 +25,19 @@ const ProjectCard = (props) => {
 
 const DisplayOver = styled.div({
 	transition: "background-color 350ms ease",
-	padding: "20px",
+	padding: "50px",
 	borderRadius: "15px",
 	width: "100%",
 	height: "100%",
+	minHeight: '400px',
 });
 
 const Hover = styled.div({
 	opacity: 0,
 	transition: "opacity 350ms ease",
 	color: "white",
+	width: "100%",
+	height: "100%",
 });
 
 
@@ -45,7 +48,9 @@ const Background = styled.div({
 	flexDirection: "column",
 	borderRadius: "15px",
 	backgroundPosition: "center",
-	backgroundSize: "fit",
+	backgroundSize: "cover",
+	height: "100%",
+	boxShadow: "5px 10px 10px #888888",
 
 	[`:hover ${DisplayOver}`]: {
 		backgroundColor: "rgba(0,0,0,.5)",

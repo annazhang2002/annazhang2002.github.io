@@ -1,5 +1,6 @@
 import React from 'react';
 import '../style.css';
+import ScrollAnimation from 'react-animate-on-scroll'
 
 import { Carousel } from 'react-bootstrap';
 import CarouselItem from '../molecules/CarouselItem';
@@ -37,23 +38,25 @@ const projects = [
 const FeaturedProjects = () => {
     return (
         <div className="section" id="portfolio">
-            <h3 style={styles.title}>Featured Projects</h3>
-            <Carousel className="shadow">
-                {projects.map((proj) => {
-                    return (
-                        <Carousel.Item>
-                            <CarouselItem
-                                title={proj.title}
-                                url={proj.url}
-                                description={proj.description}
-                                tags={proj.tags}
-                                img={proj.img}
-                                alt={proj.alt}
-                            />
-                        </Carousel.Item>
-                    )
-                })}
-            </Carousel>
+            <ScrollAnimation animateIn="fadeIn">
+                <h3 style={styles.title}>Featured Projects</h3>
+                <Carousel className="shadow">
+                    {projects.map((proj) => {
+                        return (
+                            <Carousel.Item>
+                                <CarouselItem
+                                    title={proj.title}
+                                    url={proj.url}
+                                    description={proj.description}
+                                    tags={proj.tags}
+                                    img={proj.img}
+                                    alt={proj.alt}
+                                />
+                            </Carousel.Item>
+                        )
+                    })}
+                </Carousel>
+            </ScrollAnimation>
         </div>
     );
 };
